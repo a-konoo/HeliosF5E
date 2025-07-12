@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg837" Width="156" Height="87">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas Name="layer1">
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="78" Height="85" Name="rect845" Fill="#FFFFFFFF" StrokeThickness="1.40822" Stroke="#FFFFFFFF" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Top="1"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="77" Width="79" Height="85" Name="rect8452" Fill="#FF000000" StrokeThickness="1.40822" Stroke="#FF000000" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Canvas>
+</Canvas>

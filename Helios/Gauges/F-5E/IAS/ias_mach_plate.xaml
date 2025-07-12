@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="svg5" Width="231" Height="231">
+    <Canvas.Resources>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="288.38772" Canvas.Top="508.30444" Width="209.12326" Height="202.04005" x:Name="rect138300" Fill="#000000" x:Key="rect138300"/>
+    </Canvas.Resources>
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas x:Name="layer1">
+        <TextBlock xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontSize="10.66666667" FontFamily="sans-serif" x:Name="text138298"/>
+        <Canvas x:Name="path8466">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="4.8027522 0 0 4.8027889 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111800" Fill="#FF000000" StrokeThickness="0.8" Data="M 5.943358 39.580401 A 23.8125 23.8125 0 0 1 8.878412 6.0326138 23.8125 23.8125 0 0 1 42.426228 8.9676728 23.8125 23.8125 0 0 1 39.491148 42.515489 23.8125 23.8125 0 0 1 5.943358 39.580401 Z"/>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111802" Fill="#FFFFFFFF" Data="M 26.271484 0.421875 C 20.166526 -0.11224061 13.857582 1.6819263 8.7929688 5.9316406 -1.3362386 14.431067 -2.6576134 29.536795 5.8417969 39.666016 14.341213 49.795235 29.446942 51.116591 39.576172 42.617187 49.705406 34.117767 51.026768 19.012044 42.527344 8.8828125 38.27763 3.8181987 32.376442 0.95599061 26.271484 0.421875 Z m -0.02344 0.26171875 C 32.284998 1.2117595 38.120462 4.0428893 42.324219 9.0527344 50.73173 19.072428 49.425947 34.006555 39.40625 42.414062 29.386558 50.821554 14.452425 49.515776 6.0449219 39.496094 -2.3625757 29.476411 -1.0567793 14.542279 8.9628906 6.1347656 13.972735 1.9310077 20.211096 0.15542798 26.248047 0.68359375 Z"/>
+            <Path x:Name="path111627_Copy" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="M -50.55161 14.538097 V 13.506224 12.48758 h -0.396874 v -0.15875 q 0.46302 0 0.542394 -0.370416 h 0.15875 v 2.579683 z" Stretch="Fill" Width="0.5" Canvas.Left="-50.224" Canvas.Top="16.729" Height="3" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-5.509"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path29214" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 227.06646 95.056146 -17.96929 2.880858 0.19979 1.256803 17.97078 -2.890087 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path30542" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 221.84404 74.721373 -8.52203 3.256397 0.36722 0.979418 8.52203 -3.256396 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path31872" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 212.64261 57.802282 -15.90544 8.858647 0.62126 1.114613 15.90546 -8.858668 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path33395" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 201.3579 40.904614 -6.89172 5.974364 0.68193 0.791748 6.90096 -5.972898 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path34721" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 186.33735 27.746048 -11.9149 13.764461 0.95986 0.835787 11.9149 -13.764466 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path36857" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 170.21698 15.894893 -4.44351 7.967298 0.92625 0.507771 4.43421 -7.968797 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path38181" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 152.65228 8.9055477 -6.48331 17.0086643 1.1819 0.453095 6.49258 -17.0071609 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path39517" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 133.14999 3.1764067 -1.44483 9.0025923 1.03615 0.173909 1.44628 -9.0118761 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path40845" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 114.44976 2.8168314 -1.2694 -0.020652 -0.28178 18.2093236 1.27084 0.01159 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path292142" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 147.0937 205.30464 -1.20278 0.39829 5.66521 17.29925 1.20278 -0.39829 z" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="0.174" VerticalAlignment="Top" Canvas.Top="11.65">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15.997"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path305421" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 167.47896 206.35848 -0.91803 0.5194 4.54999 7.91018 0.90875 -0.5209 z" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="2.837" VerticalAlignment="Center">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-8.355"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path318721" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 176.05195 188.20872 -0.99764 0.7822 11.23622 14.32569 1.00691 -0.78074 z" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="1.062" VerticalAlignment="Center">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-6.121"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path333953" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 195.24746 182.86281 -0.67823 0.80435 6.97029 5.88116 0.67826 -0.80433 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="-0.913" Canvas.Top="-1.256">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-2.898"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path347216" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 197.4035 162.23411 -0.66519 1.08179 15.45919 9.60955 0.66519 -1.0818 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path368578" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 213.48665 150.93425 -0.36526 0.98689 8.5643 3.13247 0.36377 -0.9776 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path381819" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 208.39333 131.8831 -0.26443 1.24976 17.81302 3.74256 0.26295 -1.24049 z" HorizontalAlignment="Left" Canvas.Left="0.531" VerticalAlignment="Center"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path395173" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 228.80887 115.47605 -9.1144 -0.0192 -0.006 1.05336 9.12512 0.011 z"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path2921421" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 114.4021 210.77332 -1.26646 -0.0389 -0.60273 18.19649 1.27571 0.0407 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="13.197" Canvas.Top="19.852">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-24.093"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path3054217" Fill="#FFFFFFFF" StrokeThickness="9" Data="m 133.19134 218.72589 -1.03636 0.18731 1.56836 8.98601 1.03639 -0.18726 z" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Left" Canvas.Left="5.623" VerticalAlignment="Top" Canvas.Top="13.499">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-19.516"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Canvas x:Name="text3922">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="0 4.8027889 -4.8027522 0 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111555" Fill="#FFFFFFFF" StrokeThickness="0.8" Data="m 6.5437792 -24.189728 q 0 0.264583 0.1322914 0.396874 0.079375 0.07937 0.2248954 0.07937 0.1190623 0 0.2248954 -0.105833 0.1587497 -0.15875 0.1587497 -0.529166 0 -0.343957 -0.1322914 -0.476249 -0.079375 -0.07938 -0.185208 -0.07938 -0.2381245 0 -0.3836451 0.277812 H 6.3188838 l 0.079375 -1.415518 h 1.1377061 v 0.251354 H 6.6496123 l -0.052917 0.859894 q 0.1719788 -0.198437 0.4365616 -0.198437 0.1984371 0 0.3439577 0.14552 0.2116663 0.211667 0.2116663 0.634999 0 0.449791 -0.2513537 0.701145 -0.185208 0.185208 -0.4497908 0.185208 -0.277812 0 -0.4365617 -0.15875 -0.1984371 -0.198437 -0.2116662 -0.568853 z" HorizontalAlignment="Center" Height="4" Stretch="Fill" VerticalAlignment="Center" Canvas.Left="6.316" Canvas.Top="-26.321" Width="3"/>
+        </Canvas>
+        <Canvas x:Name="text39229156">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.7297875 0.83399555 -0.83398915 -4.7298237 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111558" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -37.075182 -30.39616 q 0.304271 0.304271 0.304271 1.098019 0 0.806978 -0.357187 1.164164 -0.15875 0.15875 -0.396874 0.15875 -0.198438 0 -0.3175 -0.119062 -0.211666 -0.211666 -0.224895 -0.476249 h 0.30427 q 0 0.171979 0.119062 0.291041 0.05292 0.05292 0.145521 0.05292 0.0926 0 0.171979 -0.07937 0.198437 -0.198438 0.251353 -0.833436 -0.14552 0.30427 -0.44979 0.30427 -0.198438 0 -0.357187 -0.15875 -0.211666 -0.211666 -0.211666 -0.701144 0 -0.449791 0.238124 -0.687916 0.171979 -0.171978 0.396874 -0.171978 0.224896 0 0.383645 0.158749 z m -0.198437 0.15875 q -0.07938 -0.07937 -0.198437 -0.07937 -0.07937 0 -0.171979 0.0926 -0.14552 0.145521 -0.14552 0.529166 0 0.410103 0.132291 0.542395 0.07937 0.07937 0.185208 0.07937 0.119062 0 0.211666 -0.0926 0.15875 -0.158749 0.15875 -0.476249 0 -0.423332 -0.171979 -0.595311 z" Height="3" Stretch="Fill" Width="2" Canvas.Left="-38.174" Canvas.Top="-30.516" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas x:Name="text392291562">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.7297875 -0.83399555 0.83398915 -4.7298237 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111561" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -45.592836 -20.843554 q 0 -0.780519 0.317499 -1.098018 0.185208 -0.185208 0.410103 -0.185208 0.224896 0 0.410104 0.185208 0.317499 0.317499 0.317499 1.098018 0 0.793749 -0.317499 1.111248 -0.185208 0.185208 -0.410104 0.185208 -0.224895 0 -0.410103 -0.185208 -0.317499 -0.317499 -0.317499 -1.111248 z m 1.150935 0 q 0 -0.701144 -0.251354 -0.952498 -0.07937 -0.07937 -0.171979 -0.07937 -0.0926 0 -0.171978 0.07937 -0.251354 0.264583 -0.251354 0.952498 0 0.714374 0.251354 0.965728 0.07937 0.07937 0.171978 0.07937 0.0926 0 0.171979 -0.07937 0.251354 -0.251354 0.251354 -0.965728 z" Height="3" Stretch="Fill" Width="2" Canvas.Left="-45.547" Canvas.Top="-22.383" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="1.729"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="0.015"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text39229156205614">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="0 -4.8027889 4.8027522 0 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Canvas x:Name="text392291562056149">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="0 -4.8027889 4.8027522 0 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111567" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -42.064731 23.301274 q -0.14552 0 -0.251353 0.105833 -0.132292 0.132291 -0.132292 0.357187 0 0.264582 0.132292 0.396874 0.105833 0.105833 0.251353 0.105833 0.145521 0 0.251354 -0.105833 0.132291 -0.132292 0.132291 -0.396874 0 -0.224896 -0.132291 -0.357187 -0.105833 -0.105833 -0.251354 -0.105833 z m 0.264583 -0.119063 q 0.119062 0.03969 0.211666 0.132292 0.211667 0.211666 0.211667 0.449791 0 0.357186 -0.211667 0.568853 -0.171979 0.171979 -0.476249 0.171979 -0.30427 0 -0.476249 -0.171979 -0.211666 -0.211667 -0.211666 -0.568853 0 -0.238125 0.211666 -0.449791 0.0926 -0.0926 0.211666 -0.132292 -0.105833 -0.03969 -0.171978 -0.105833 Q -42.6865 22.89117 -42.6865 22.639817 v -0.01323 q 0 -0.330728 0.198437 -0.529165 0.171979 -0.171979 0.423332 -0.171979 0.251354 0 0.423333 0.171979 0.198437 0.198437 0.198437 0.529165 v 0.01323 q 0 0.251353 -0.185208 0.436561 -0.06615 0.06615 -0.171979 0.105833 z m -0.264583 -1.018643 q -0.132291 0 -0.224895 0.0926 -0.105833 0.105833 -0.105833 0.370415 v 0.01323 q 0 0.238124 0.105833 0.343957 0.0926 0.0926 0.224895 0.0926 0.132292 0 0.224896 -0.0926 0.105833 -0.105833 0.105833 -0.343957 v -0.01323 q 0 -0.264582 -0.105833 -0.370415 -0.0926 -0.0926 -0.224896 -0.0926 z" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Top" Width="2" Canvas.Left="-39.994" Canvas.Top="28.532" RenderTransformOrigin="0.5,0.5" Height="3">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-21.42"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text392299">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="0 4.8027889 -4.8027522 0 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111570" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m 5.8922838 -23.98934 v 0.291041 H 5.5880136 v -0.291041 z"/>
+        </Canvas>
+        <Canvas x:Name="text392296">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-1.4841319 4.5677237 -4.5676886 -1.4841434 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111573" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -2.7931948 -31.127615 v 0.291041 h -0.3042703 v -0.291041 z"/>
+        </Canvas>
+        <Canvas x:Name="text3922965">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-1.4841319 4.5677237 -4.5676886 -1.4841434 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111576" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -1.412548 -32.535373 q 0 -0.198437 -0.092604 -0.291041 -0.052917 -0.05292 -0.1322914 -0.05292 -0.1058332 0 -0.185208 0.07937 -0.2248954 0.224895 -0.277812 0.886352 0.185208 -0.30427 0.4497908 -0.30427 0.1984371 0 0.3571868 0.15875 0.2116663 0.211666 0.2116663 0.648228 0 0.476249 -0.2248954 0.701144 -0.1587497 0.15875 -0.4101034 0.15875 -0.2248954 0 -0.4101034 -0.185208 -0.2778119 -0.277812 -0.2778119 -1.07156 0 -0.78052 0.3836451 -1.164165 0.1587497 -0.15875 0.3968742 -0.15875 0.1984371 0 0.3174994 0.119063 0.185208 0.185208 0.1984371 0.476249 z m -0.2910411 0.555624 q -0.1190622 0 -0.2116662 0.0926 -0.1587497 0.158749 -0.1587497 0.423332 0 0.410104 0.185208 0.595312 0.079375 0.07937 0.1852079 0.07937 0.1058332 0 0.1984372 -0.0926 0.1190622 -0.119062 0.1190622 -0.529165 0 -0.357187 -0.1322914 -0.489478 -0.079375 -0.07938 -0.185208 -0.07938 z" HorizontalAlignment="Center" Canvas.Left="-2.376" Canvas.Top="-33.072" VerticalAlignment="Center" Height="4" Stretch="Fill" Width="3"/>
+        </Canvas>
+        <Canvas x:Name="text39229151">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-3.1508889 3.6247108 -3.624683 -3.150913 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111579" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -16.322671 -33.589419 v 0.291041 h -0.30427 v -0.291041 z"/>
+        </Canvas>
+        <Canvas x:Name="text392291510">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-3.1508889 3.6247108 -3.624683 -3.150913 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111582" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -15.577022 -33.155593 0.648228 -2.328329 h -0.978957 v -0.251354 h 1.256768 v 0.277812 l -0.621769 2.301871 z" HorizontalAlignment="Center" Height="3" Stretch="Fill" VerticalAlignment="Center" Width="2" Canvas.Left="-16.189" Canvas.Top="-36"/>
+        </Canvas>
+        <Canvas x:Name="text39229158">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.0729647 2.5450904 -2.5450709 -4.072996 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111585" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -25.455564 -34.921922 q -0.14552 0 -0.251353 0.105833 -0.132292 0.132291 -0.132292 0.357187 0 0.264582 0.132292 0.396874 0.105833 0.105833 0.251353 0.105833 0.145521 0 0.251354 -0.105833 0.132291 -0.132292 0.132291 -0.396874 0 -0.224896 -0.132291 -0.357187 -0.105833 -0.105833 -0.251354 -0.105833 z m 0.264583 -0.119063 q 0.119062 0.03969 0.211666 0.132292 0.211667 0.211666 0.211667 0.449791 0 0.357186 -0.211667 0.568853 -0.171978 0.171978 -0.476249 0.171978 -0.30427 0 -0.476249 -0.171978 -0.211666 -0.211667 -0.211666 -0.568853 0 -0.238125 0.211666 -0.449791 0.0926 -0.0926 0.211667 -0.132292 -0.105834 -0.03969 -0.171979 -0.105833 -0.185208 -0.185208 -0.185208 -0.436561 v -0.01323 q 0 -0.330728 0.198437 -0.529165 0.171979 -0.171979 0.423332 -0.171979 0.251354 0 0.423333 0.171979 0.198437 0.198437 0.198437 0.529165 v 0.01323 q 0 0.251353 -0.185208 0.436561 -0.06615 0.06615 -0.171979 0.105833 z m -0.264583 -1.018643 q -0.132291 0 -0.224895 0.0926 -0.105833 0.105833 -0.105833 0.370415 v 0.01323 q 0 0.238124 0.105833 0.343957 0.0926 0.0926 0.224895 0.0926 0.132292 0 0.224896 -0.0926 0.105833 -0.105833 0.105833 -0.343957 v -0.01323 q 0 -0.264582 -0.105833 -0.370415 -0.0926 -0.0926 -0.224896 -0.0926 z" HorizontalAlignment="Center" Height="3" Canvas.Left="-26.022" RenderTransformOrigin="0.399,0.484" Stretch="Fill" Canvas.Top="-36.1" VerticalAlignment="Center" Width="2">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.202" Y="0.096"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text392291581">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="0 -4.8027889 4.8027522 0 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Canvas x:Name="text3922915818">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-1.642638 -4.5131453 4.5131108 -1.6426506 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Canvas x:Name="text39229158121">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-3.0871495 -3.6791497 3.6791216 -3.0871733 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111594" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -52.311495 2.742331 v 0.2910411 h -0.304271 V 2.742331 Z" HorizontalAlignment="Center" Canvas.Left="-51.7" Canvas.Top="6.182" VerticalAlignment="Top" Stretch="Fill" Width="0.3" Height="0.3" RenderTransformOrigin="0.553,0.367">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-7.911"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="path111594_Copy" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -52.311495 2.742331 v 0.2910411 h -0.304271 V 2.742331 Z" Canvas.Left="-51.766" Canvas.Top="2.236" Stretch="Fill" Width="0.3" Height="0.3" RenderTransformOrigin="0.708,-1.017" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="10.385"/>
+                        <TranslateTransform X="0.073" Y="0.013"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="path111594_Copy1" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -52.311495 2.742331 v 0.2910411 h -0.304271 V 2.742331 Z" Canvas.Left="-50.992" Canvas.Top="-1.249" Stretch="Fill" Width="0.3" Height="0.3" RenderTransformOrigin="0.553,0.367" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="20.303"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text39229158103">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.116762 -2.4736192 2.4736001 -4.1167936 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111597" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -51.327563 -8.1155774 v 0.2910411 h -0.30427 v -0.2910411 z" HorizontalAlignment="Center" Canvas.Left="0.238" Canvas.Top="1.171" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas x:Name="text3922915812">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.7297875 -0.83399555 0.83398915 -4.7298237 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111600" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -45.739012 -19.894692 v 0.291041 h -0.304271 v -0.291041 z" HorizontalAlignment="Center" Canvas.Left="0.054" Canvas.Top="0.112" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas x:Name="text3922915810">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.7297875 0.83399555 -0.83398915 -4.7298237 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111603" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -38.509245 -28.268278 v 0.291041 h -0.304271 v -0.291041 z"/>
+        </Canvas>
+        <Canvas x:Name="text3922915811">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.0729647 2.5450904 -2.5450709 -4.072996 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111606" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -26.389657 -34.082518 v 0.291041 h -0.30427 v -0.291041 z"/>
+        </Canvas>
+        <Canvas x:Name="text3922915624">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.7297875 -0.83399555 0.83398915 -4.7298237 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111609" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -46.946031 -19.530241 v -1.031873 -1.018643 h -0.396874 v -0.15875 q 0.46302 0 0.542395 -0.370416 h 0.158749 v 2.579682 z" HorizontalAlignment="Center" Height="3" Stretch="Fill" VerticalAlignment="Center" Width="1" Canvas.Left="-47.353" Canvas.Top="-22.487"/>
+        </Canvas>
+        <Canvas x:Name="text392291562053">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.116762 -2.4736192 2.4736001 -4.1167936 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111612" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -52.355188 -7.7908488 v -1.0318729 -1.0186439 h -0.396874 v -0.1587494 q 0.46302 0 0.542395 -0.370416 h 0.15875 v 2.5796822 z" HorizontalAlignment="Center" Canvas.Left="-52.826" Canvas.Top="-9.656" VerticalAlignment="Center" Height="3" Stretch="Fill" Width="1" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="7.172"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text3922915620536">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-4.116762 -2.4736192 2.4736001 -4.1167936 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111615" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -49.656299 -7.9917187 v 0.2513537 h -1.349372 v -0.2116663 q 0.30427 -0.5688531 0.754061 -1.0847896 0.251353 -0.2910411 0.251353 -0.6085405 0 -0.2248953 -0.119062 -0.3439576 -0.07938 -0.079375 -0.211666 -0.079375 -0.105833 0 -0.211666 0.1058333 -0.119063 0.1190622 -0.119063 0.4894782 h -0.291041 q 0.01323 -0.4762491 0.224896 -0.6879155 0.158749 -0.15875 0.423332 -0.15875 0.251354 0 0.423333 0.171979 0.185208 0.1852083 0.185208 0.5159368 0 0.3836451 -0.357187 0.7937484 -0.383645 0.4365617 -0.634999 0.8466651 z" Height="3" Stretch="Fill" Width="2" Canvas.Left="-50.627" Canvas.Top="-9.519" HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="6.127"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text392291562050">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-3.0871495 -3.6791497 3.6791216 -3.0871733 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111618" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="M -53.384813 3.0670597 V 2.0351867 1.0165429 h -0.396874 V 0.85779319 q 0.46302 0 0.542395 -0.37041595 h 0.15875 V 3.0670597 Z" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Center" Width="1" Canvas.Left="-53.281" Canvas.Top="3.728" Height="3" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-8.421"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text3922915620503">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-3.0871495 -3.6791497 3.6791216 -3.0871733 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111621" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="M -51.530005 3.0670636 V 2.7627933 2.4585231 h -0.886352 V 2.2071694 l 0.886352 -1.71978835 h 0.304271 V 2.2071694 h 0.277812 v 0.2513537 h -0.277812 v 0.6085405 z m 0 -0.8598942 V 1.043005 l -0.595311 1.1641644 z" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Center" Width="2" Canvas.Left="-51.539" Canvas.Top="3.457" Height="3" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-7.244"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text3922915620565">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-1.642638 -4.5131453 4.5131108 -1.6426506 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111624" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="m -48.435869 12.553722 q 0 -0.198437 -0.0926 -0.291041 -0.05292 -0.05292 -0.132291 -0.05292 -0.105833 0 -0.185208 0.07938 -0.224895 0.224895 -0.277812 0.886353 0.185208 -0.304271 0.449791 -0.304271 0.198437 0 0.357187 0.15875 0.211666 0.211666 0.211666 0.648228 0 0.476249 -0.224895 0.701144 -0.15875 0.15875 -0.410104 0.15875 -0.224895 0 -0.410103 -0.185208 -0.277812 -0.277812 -0.277812 -1.07156 0 -0.78052 0.383645 -1.164165 0.15875 -0.158749 0.396874 -0.158749 0.198437 0 0.3175 0.119062 0.185207 0.185208 0.198437 0.476249 z m -0.291041 0.555624 q -0.119062 0 -0.211666 0.0926 -0.15875 0.15875 -0.15875 0.423332 0 0.410104 0.185208 0.595312 0.07937 0.07938 0.185208 0.07938 0.105833 0 0.198437 -0.0926 0.119063 -0.119063 0.119063 -0.529166 0 -0.357187 -0.132292 -0.489478 -0.07937 -0.07937 -0.185208 -0.07937 z" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Top" Width="2" Canvas.Left="-47.439" Canvas.Top="16.951" Height="3" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-6.782"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="text39229156205653">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="-1.642638 -4.5131453 4.5131108 -1.6426506 -0.91255887 -1.2555678"/>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path111627" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="M -50.55161 14.538097 V 13.506224 12.48758 h -0.396874 v -0.15875 q 0.46302 0 0.542394 -0.370416 h 0.15875 v 2.579683 z" HorizontalAlignment="Left" Stretch="Fill" VerticalAlignment="Center" Width="1" Canvas.Left="-49.566" Canvas.Top="17.3" Height="3" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-12.452"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="path111627_Copy1" Fill="#FFFFFFFF" StrokeThickness="0.211666" Data="M -50.55161 14.538097 V 13.506224 12.48758 h -0.396874 v -0.15875 q 0.46302 0 0.542394 -0.370416 h 0.15875 v 2.579683 z" Stretch="Fill" Width="1" Canvas.Left="-49.831" Canvas.Top="13.664" Height="3" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-3.475"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+    </Canvas>
+</Canvas>

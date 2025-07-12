@@ -1,0 +1,14 @@
+﻿<ControlTemplate>
+  <Name>CursorRound</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.Image</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Image>{F-5E}/Images/Misc/CursorRound.png</Image>
+      <Alignment>Stretched</Alignment>
+      <CornerRadius>0</CornerRadius>
+      <Location>48.5,51.04</Location>
+      <Size>118,70</Size>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg2109" Width="48" Height="77">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect846" Fill="#FFFFFFFF" StrokeThickness="0.0969579" Stroke="#FF000000" Data="M 1.4449519 4.1596065 3.1619029 0.54065469 4.8047864 4.1473748 c 0 0 0.00512 0.2033882 0.00512 0.3928412 v 34.397991 c 0 0.189453 -0.1096453 0.341973 -0.2458408 0.341973 h -2.878394 c -0.1361957 0 -0.2458406 -0.15252 -0.2458406 -0.341973 V 4.540216 c 0.00926 0.6863074 -0.00509 -0.7762765 0.00512 -0.3806095 z" Canvas.Left="21.925" Canvas.Top="14.83" HorizontalAlignment="Center" VerticalAlignment="Center" Height="42" Stretch="Fill" Width="4"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="21.424" Canvas.Top="56.174" Width="5" Height="12" Name="rect1691" Fill="#FF000000" StrokeThickness="0.265879" Stroke="#FFFFFFFF" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Canvas>
+</Canvas>

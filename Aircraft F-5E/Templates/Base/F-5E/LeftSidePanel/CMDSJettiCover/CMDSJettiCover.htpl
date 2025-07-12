@@ -1,0 +1,25 @@
+﻿<ControlTemplate>
+  <Name>CMDSJettiCover</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.GuardedSwitch</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>281,182</Location>
+      <Size>65,249</Size>
+      <Hidden>False</Hidden>
+      <SwitchType>OnOn</SwitchType>
+      <Orientation>Vertical</Orientation>
+      <ClickType>Swipe</ClickType>
+      <GuardUp>
+        <PositionOneImage>{F-5E}/Images/LeftSidePanel/CMWSJetti/CMWS_JETTI_02.png</PositionOneImage>
+        <PositionTwoImage>{F-5E}/Images/LeftSidePanel/CMWSJetti/CMWS_JETTI_02.png</PositionTwoImage>
+      </GuardUp>
+      <GuardDown>
+        <PositionOneImage>{F-5E}/Images/LeftSidePanel/CMWSJetti/CMWS_JETTI_01.png</PositionOneImage>
+        <PositionTwoImage>{F-5E}/Images/LeftSidePanel/CMWSJetti/CMWS_JETTI_01.png</PositionTwoImage>
+      </GuardDown>
+      <DefaultPosition>Two</DefaultPosition>
+      <DefaultGuardPosition>Down</DefaultGuardPosition>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg2109" Width="48" Height="77">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path21923" Fill="#FFFFFFFF" StrokeThickness="0.292423" Stroke="#FF808080" Data="m 23.865944 1.3181479 c -0.103863 0.008 -8.672293 36.7271901 -8.72259 37.1239101 -0.04366 0.34435 -0.09622 16.48268 -0.02503 25.60534 5.969302 -0.009 12.102165 -0.009 18.014146 0.002 0.0059 -7.53567 -0.307704 -24.90065 -0.355889 -25.2501 -0.05357 -0.38848 -8.80677 -37.4891201 -8.910633 -37.4808801 z"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="14.993436" Canvas.Top="42.837189" Width="18.025745" Height="12.135723" Name="rect1691" Fill="#FF000000" StrokeThickness="0.265879" Stroke="#FFFFFFFF"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="9.7" Width="28" Canvas.Top="49" Height="28" Name="path1359a" Fill="#FF808080" StrokeThickness="0.264583" Stroke="#FF000000"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="18" Width="12" Canvas.Top="57" Height="12" Name="path1359b" Fill="#FF808080" StrokeThickness="0.264583" Stroke="#FF000000" RenderTransformOrigin="1.256,1.311"/>
+    </Canvas>
+    <Canvas Name="text3969"/>
+    <Canvas Name="text6847">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path885" Fill="#FF666666" StrokeThickness="0.264583" Data="M 17.166174 10.798377 H 11.32467 V 1.5648323 h 1.227832 v 8.1421385 h 4.613672 z" Canvas.Left="10.333" Canvas.Top="29.333"/>
+    </Canvas>
+</Canvas>

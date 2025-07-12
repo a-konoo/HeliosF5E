@@ -1,0 +1,15 @@
+﻿<ControlTemplate>
+  <Name>UI_Msl_On(Active)</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.PushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>195,331</Location>
+      <Size>57,52</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/ThrottleUI/F5E_MSLREL/UI_MSLREL_02.png</Image>
+      <PushedImage>{F-5E}/Images/ThrottleUI/F5E_MSLREL/UI_MSLREL_03.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

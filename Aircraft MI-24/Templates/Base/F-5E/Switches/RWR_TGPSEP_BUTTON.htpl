@@ -1,0 +1,21 @@
+﻿<ControlTemplate>
+  <Name>RWR PANEL BUTTON HANDOFF</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.FlipAnimationLever</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>102.5,101</Size>
+      <Hidden>False</Hidden>
+      <AnimationFrameImageNamePattern>{F-5E}/Images/RWRPanelButtons/TGPSEP_OFF_1.png</AnimationFrameImageNamePattern>
+      <Positions>
+        <Position Name="off" StartFlame="1" EndFlame="1" FlameSpan="100" PushDownImage="{F-5E}/Images/RWRPanelButtons/TGPSEP_OFF_1.png" ClickableRect="0,0,102.5,101" SendValue="1" />
+        <Position Name="on" StartFlame="2" EndFlame="3" FlameSpan="100" PushDownImage="{F-5E}/Images/RWRPanelButtons/TGPSEP_ON_2.png" ClickableRect="0,0,102.5,101" SendValue="0" />
+        <Position Name="pushed" StartFlame="4" EndFlame="5" FlameSpan="100" PushDownImage="{F-5E}/Images/RWRPanelButtons/TGPSEP_ON_3.png" ClickableRect="0,0,102.5,101" SendValue="0" />
+      </Positions>
+      <DefaultPosition>0</DefaultPosition>
+      <Type>Toggle</Type>
+      <Continuous>False</Continuous>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

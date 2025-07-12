@@ -1,0 +1,15 @@
+﻿<ControlTemplate>
+  <Name>UI_SightCage</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.PushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>50,50</Size>
+      <Hidden>False</Hidden>
+      <Type>Toggle</Type>
+      <Image>{F-5E}/Images/ThrottleUI/F5EPanel/F5E_SG_01.png</Image>
+      <PushedImage>{F-5E}/Images/ThrottleUI/F5EPanel/F5E_SG_02.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

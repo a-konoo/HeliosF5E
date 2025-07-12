@@ -1,0 +1,50 @@
+﻿<ControlTemplate>
+  <Name>LeftThrottle</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.F5E.FlipThrottle</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>40,68</Location>
+      <Size>620,433</Size>
+      <Hidden>False</Hidden>
+      <AnimationFrameImageNamePattern>{F-5E}/Images/LeftSidePanel/Throttle/LeftThrottle/Lth_01_01.png</AnimationFrameImageNamePattern>
+      <Positions>
+        <Position Name="0" Frame="1"   SendValue="0" />
+        <Position Name="1" Frame="2"   SendValue="0" />
+        <Position Name="2" Frame="3"   SendValue="0" />
+        <Position Name="3" Frame="4"   SendValue="0" />
+        <Position Name="4" Frame="5"   SendValue="0" />
+        <Position Name="5" Frame="6"   SendValue="0" />
+        <Position Name="6" Frame="7"   SendValue="0" />
+        <Position Name="7" Frame="8"   SendValue="0" />
+        <Position Name="8" Frame="9"   SendValue="0" />
+        <Position Name="9" Frame="10"   SendValue="0" />
+        <Position Name="10" Frame="11"   SendValue="0" />
+        <Position Name="11" Frame="12"   SendValue="0" />
+        <Position Name="12" Frame="13"   SendValue="0" />
+        <Position Name="13" Frame="14"   SendValue="0" />
+        <Position Name="14" Frame="15"   SendValue="0" />
+        <Position Name="15" Frame="16"   SendValue="0" />
+        <Position Name="16" Frame="17"   SendValue="0" />
+        <Position Name="17" Frame="18"   SendValue="0" />
+        <Position Name="18" Frame="19"   SendValue="0" />
+        <Position Name="19" Frame="20"   SendValue="0" />
+        <Position Name="20" Frame="21"   SendValue="0" />
+        <Position Name="21" Frame="22"   SendValue="0" />
+        <Position Name="22" Frame="23"   SendValue="0" />
+        <Position Name="23" Frame="24"   SendValue="0" />
+        <Position Name="24" Frame="25"   SendValue="0" />
+        <Position Name="25" Frame="26"   SendValue="0" />
+        <Position Name="26" Frame="27"   SendValue="0" />
+        <Position Name="27" Frame="28"   SendValue="0" />
+        <Position Name="28" Frame="29"   SendValue="0" />
+        <Position Name="29" Frame="30"   SendValue="0" />
+        <Position Name="30" Frame="31"   SendValue="0" />
+        <Position Name="31" Frame="32"   SendValue="0" />
+        <Position Name="32" Frame="33"   SendValue="0" />
+        <Position Name="33" Frame="34"   SendValue="0" />
+      </Positions>
+      <PatternNumber>1</PatternNumber>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

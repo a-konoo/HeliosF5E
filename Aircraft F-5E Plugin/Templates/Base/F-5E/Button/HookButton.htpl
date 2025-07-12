@@ -1,0 +1,18 @@
+﻿<ControlTemplate>
+  <Name>HookButton</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.IndicatorPushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <IndicatorOnImage>{F-5E}/Images/FrontButtons/HookButton/HookOff.png</IndicatorOnImage>
+      <PushedIndicatorOnImage>{F-5E}/Images/FrontButtons/HookButton/HookOn.png</PushedIndicatorOnImage>
+      <OnTextColor>#FFB3A229</OnTextColor>
+      <Location>292,206</Location>
+      <Size>38,89</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/FrontButtons/HookButton/HookOff.png</Image>
+      <PushedImage>{F-5E}/Images/FrontButtons/HookButton/HookOn.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

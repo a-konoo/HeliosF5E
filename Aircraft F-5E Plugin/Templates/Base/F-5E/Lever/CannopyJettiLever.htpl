@@ -1,0 +1,18 @@
+﻿<ControlTemplate>
+  <Name>CanopyJettiLever</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.ToggleSwitch</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>387,387</Location>
+      <Size>160,147</Size>
+      <Hidden>False</Hidden>
+      <SwitchType>MomOn</SwitchType>
+      <Orientation>Vertical</Orientation>
+      <ClickType>Swipe</ClickType>
+      <PositionOneImage>{F-5E}/Images/MetalLevers/CanopyJetti/CanopyJettiOn.png</PositionOneImage>
+      <PositionTwoImage>{F-5E}/Images/MetalLevers/CanopyJetti/CanopyJettiOff.png</PositionTwoImage>
+      <DefaultPosition>Two</DefaultPosition>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

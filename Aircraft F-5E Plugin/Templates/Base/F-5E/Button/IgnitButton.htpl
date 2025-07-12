@@ -1,0 +1,18 @@
+﻿<ControlTemplate>
+  <Name>IgnitButton</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.IndicatorPushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <IndicatorOnImage>{F-5E}/Images/FrontButtons/IgnitButton/IgnitButtonOff.png</IndicatorOnImage>
+      <PushedIndicatorOnImage>{F-5E}/Images/FrontButtons/IgnitButton/IgnitButtonOn.png</PushedIndicatorOnImage>
+      <OnTextColor>#FFB3A229</OnTextColor>
+      <Location>349,206</Location>
+      <Size>38,89</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/FrontButtons/IgnitButton/IgnitButtonOff.png</Image>
+      <PushedImage>{F-5E}/Images/FrontButtons/IgnitButton/IgnitButtonOn.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

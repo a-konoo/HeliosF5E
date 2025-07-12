@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg2109" Width="50" Height="135">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect7974" Fill="#FFFFFFFF" StrokeThickness="0.4" Stroke="#111111" Data="m 25.322084 10.718438 c 0.641799 24.426518 1.56781 72.257389 2.334854 73.177439 l -0.47573 12.457227 h -3.86767 L 23.000532 83.945911 c 0.617089 -0.535149 1.606129 -48.841527 2.321552 -73.227473 z" Canvas.Left="23" Height="59.156" Stretch="Fill" Canvas.Top="37.755" Width="4.267"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="23.335423" Canvas.Top="112.70383" Width="3.8238988" Height="19.296022" Name="rect15965" Fill="#FF000000" StrokeThickness="0.176101" Stroke="#FFFFFFFF"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="23" Canvas.Top="96" Width="4" Height="7" Name="rect1596" Fill="#FF000000" StrokeThickness="0.109946" Stroke="#FFFFFFFF"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="19.2" Canvas.Top="101.9" Width="12" Height="12" Name="path1359" Fill="#FF808080" StrokeThickness="0.2231" Stroke="#111111"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="21.1" Canvas.Top="126.2" Width="8" Height="8" Name="path13591" Fill="#FF808080" StrokeThickness="0.2231" Stroke="#FFFFFFFF"/>
+    </Canvas>
+</Canvas>

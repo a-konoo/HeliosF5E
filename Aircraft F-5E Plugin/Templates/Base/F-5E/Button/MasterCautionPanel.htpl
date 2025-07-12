@@ -1,0 +1,18 @@
+﻿<ControlTemplate>
+  <Name>MasterCautionPanel</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.IndicatorPushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <IndicatorOnImage>{F-5E}/Images/FrontButtons/MasterCaution/MstCautionOn.png</IndicatorOnImage>
+      <PushedIndicatorOnImage>{F-5E}/Images/FrontButtons/MasterCaution/MstCautionOnPushed.png</PushedIndicatorOnImage>
+      <OnTextColor>#FFB3A229</OnTextColor>
+      <Location>460,206</Location>
+      <Size>37,145</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/FrontButtons/MasterCaution/MstCautionOff.png</Image>
+      <PushedImage>{F-5E}/Images/FrontButtons/MasterCaution/MstCautionOffPushed.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

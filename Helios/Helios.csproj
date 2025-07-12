@@ -1,0 +1,2994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{E5ABE3F5-46EC-46D1-9330-D42311471A93}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GadrocsWorkshop.Helios</RootNamespace>
+    <AssemblyName>Helios</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Helios.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=4.60.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dirkster.AvalonDock.4.60.0\lib\net40\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommandLineParser.2.9.1\lib\net461\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomMarshalers" />
+    <Reference Include="EosSharp, Version=1.1.5488.21795, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EosSharp.1.1.5488.21795\lib\net45\EosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="HidSharp, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HidSharp.2.1.0\lib\net35\HidSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="KeraLua, Version=1.0.29.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
+      <HintPath>..\packages\KeraLua.1.0.29\lib\net45\KeraLua.dll</HintPath>
+    </Reference>
+    <Reference Include="LibUsbDotNet, Version=3.0.0.0, Culture=neutral, PublicKeyToken=c677239abe1e02a9, processorArchitecture=MSIL">
+      <HintPath>..\packages\LibUsbDotNet.3.0.102-alpha\lib\net45\LibUsbDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.4.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Core.1.1.4\lib\net472\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack.Shell, Version=1.1.4.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Shell.1.1.4\lib\net472\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Schema, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.13\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLua, Version=1.4.31.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLua.1.4.31\lib\net45\NLua.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SharpDX, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.4.2.0\lib\net45\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DirectInput, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpDX.DirectInput.4.2.0\lib\net45\SharpDX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.1\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentModel\HeliosCapabilityEditorAttribute.cs" />
+    <Compile Include="ComponentModel\HeliosEditorAttribute.cs" />
+    <Compile Include="ComponentModel\HeliosToolAttribute.cs" />
+    <Compile Include="Controls\Capabilities\IRefreshableImage.cs" />
+    <Compile Include="Controls\Special\DCSMonitorScriptAppenderAppearanceEditor.xaml.cs">
+      <DependentUpon>DCSMonitorScriptAppenderAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\DCSMonitorScriptAppenderRenderer.cs" />
+    <Compile Include="Controls\BacklitPushButton.cs" />
+    <Compile Include="Controls\BacklitPushButtonAppearanceEditor.xaml.cs">
+      <DependentUpon>BacklitPushButtonAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BacklitPushButtonRenderer.cs" />
+    <Compile Include="Controls\Capabilities\IConfigurableImageLocation.cs" />
+    <Compile Include="Controls\Capabilities\IBackgroundImage.cs" />
+    <Compile Include="Controls\Capabilities\IConfigurableBackgroundImage.cs" />
+    <Compile Include="Controls\Capabilities\IControlWithProfileInstance.cs" />
+    <Compile Include="Controls\Capabilities\INamedControl.cs" />
+    <Compile Include="Controls\Capabilities\IRotarySwitch.cs" />
+    <Compile Include="Controls\BackgroundImageAppearanceEditor.xaml.cs">
+      <DependentUpon>BackgroundImageAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Capabilities\IViewportExtent.cs" />
+    <Compile Include="Controls\Capabilities\IWindowsManipulationAware.cs" />
+    <Compile Include="Controls\Capabilities\IWindowsMouseInput.cs" />
+    <Compile Include="Controls\Capabilities\IWindowsPreviewInput.cs" />
+    <Compile Include="Controls\BarGaugeAppearanceEditor.xaml.cs">
+      <DependentUpon>BarGaugeAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GlassOpacityAppearanceEditor.xaml.cs">
+      <DependentUpon>GlassOpacityAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageAssetLocationAppearanceEditor.xaml.cs">
+      <DependentUpon>ImageAssetLocationAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageTranslucentBehaviorEditor.xaml.cs">
+      <DependentUpon>ImageTranslucentBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DualIndicatorPushButton.cs" />
+    <Compile Include="Controls\DualIndicatorPushButtonRenderer.cs" />
+    <Compile Include="Controls\DualIndicatorPushButtonAppearanceEditor.xaml.cs">
+      <DependentUpon>DualIndicatorPushButtonAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Capabilities\IKineographControl.cs" />
+    <Compile Include="Controls\Special\ExternalIndicatorAppearanceEditor.xaml.cs">
+      <DependentUpon>ExternalIndicatorAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KineographRenderer.cs" />
+    <Compile Include="Controls\LinearPotentiometerDetentsAnimated.cs" />
+    <Compile Include="Controls\NumericTextDisplay.cs" />
+    <Compile Include="Controls\LinearPotentiometerAnimated.cs" />
+    <Compile Include="Controls\AnimationAppearanceEditor.xaml.cs">
+      <DependentUpon>AnimationAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LinearPotentiometerBehaviorEditor.xaml.cs">
+      <DependentUpon>LinearPotentiometerBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RendererCapabilities\IWindowsControl.cs" />
+    <Compile Include="Controls\DetentAddPositionUndoEvent.cs" />
+    <Compile Include="Controls\RotarySwitchBehaviorEditor.xaml.cs">
+      <DependentUpon>RotarySwitchBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetentDeletePositionUndoEvent.cs" />
+    <Compile Include="Controls\Special\CalibrationFilter.cs" />
+    <Compile Include="Controls\Special\CalibrationFilterBehaviorEditor.xaml.cs">
+      <DependentUpon>CalibrationFilterBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\ExternalIndicatorControl.cs" />
+    <Compile Include="Controls\Special\ScreenReplicatorAdjustable.cs" />
+    <Compile Include="Controls\Special\ScreenReplicatorAdjustableAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>ScreenReplicatorAdjustableAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\ScreenReplicatorAdjustableRenderer.cs" />
+    <Compile Include="Controls\Special\SimpleComputationWire.cs" />
+    <Compile Include="Controls\Special\TestControl.cs" />
+    <Compile Include="Controls\NumericTextDisplayBehaviorPropertyEditor.xaml.cs">
+      <DependentUpon>NumericTextDisplayBehaviorPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\LockedViewportExtent.cs" />
+    <Compile Include="Controls\Special\MemoryWire.cs" />
+    <Compile Include="Controls\RockerSwitch.cs" />
+    <Compile Include="Controls\RockerSwitchAppearanceEditor.xaml.cs">
+      <DependentUpon>RockerSwitchAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RockerSwitchRenderer.cs" />
+    <Compile Include="Controls\Special\SimpleComputationWireBehaviorEditor.xaml.cs">
+      <DependentUpon>SimpleComputationWireBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\DCSMonitorScriptAppender.cs" />
+    <Compile Include="Controls\Special\DCSMonitorSetupScriptAppenderBehaviorEditor.xaml.cs">
+      <DependentUpon>DCSMonitorSetupScriptAppenderBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\MetronomeBehaviorEditor.xaml.cs">
+      <DependentUpon>MetronomeBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextualDisplayEnablerAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>TextualDisplayEnablerAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\Metronome.cs" />
+    <Compile Include="Controls\TimerPanelBehaviorEditor.xaml.cs">
+      <DependentUpon>TimerPanelBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimerPanel.cs" />
+    <Compile Include="Controls\HeliosPanelBehaviorEditor.xaml.cs">
+      <DependentUpon>HeliosPanelBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnumDisplayEntry.cs" />
+    <Compile Include="Gauges\A-10\Common\Blanking Panel Left.cs" />
+    <Compile Include="Gauges\A-10\Radios\UHFRadio.cs" />
+    <Compile Include="Gauges\A-10\Radios\ARC-210.cs" />
+    <Compile Include="Gauges\A-10\Radios\UHFFreqDisplay.cs" />
+    <Compile Include="Gauges\A-10\Radios\UHFChanDisplay.cs" />
+    <Compile Include="Gauges\A-10\Radios\UHFFreqRepeater.cs" />
+    <Compile Include="Gauges\A-10\DigitalClock\DigitalClock.cs" />
+    <Compile Include="Gauges\A-10\DigitalClock\DigitalClockGauge.cs" />
+    <Compile Include="Gauges\A-10\CMSC\CMSC.cs" />
+    <Compile Include="Gauges\A-10\CMSP\CMSP.cs" />
+    <Compile Include="Gauges\A-10\Common\Blanking Panel Right.cs" />
+    <Compile Include="Gauges\A-10\HARS\HARS.cs" />
+    <Compile Include="Gauges\A-10\HARS\HARSSync_1.cs" />
+    <Compile Include="Gauges\A-10\HMCS\HMCS.cs" />
+    <Compile Include="Gauges\CompositeVisualWithBackgroundImage.cs" />
+    <Compile Include="Gauges\BarGauge.cs" />
+    <Compile Include="GlobalOptions.cs" />
+    <Compile Include="HeliosCapabilityEditorDescriptor.cs" />
+    <Compile Include="HeliosVisualWithXml.cs" />
+    <Compile Include="IBuildableFunction.cs" />
+    <Compile Include="IInstallation2.cs" />
+    <Compile Include="IModuleManagerWritable.cs" />
+    <Compile Include="Interfaces\Common\ViewportCompilerInterface.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\ARC210Display.cs" />
+    <Compile Include="Interfaces\DCS\A10C\A10C1Interface.cs" />
+    <Compile Include="Interfaces\DCS\A10C\A10C2Interface.cs" />
+    <Compile Include="Interfaces\Common\Ignored.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSInterfaceEditorBase.cs" />
+    <Compile Include="Interfaces\DCS\Soft\SoftInterfaceEditor.xaml.cs">
+      <DependentUpon>SoftInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DCS\Soft\SoftInterface.cs" />
+    <Compile Include="Interfaces\DCS\Soft\SoftInterfaceFactory.cs" />
+    <Compile Include="Interfaces\DCS\Template\Functions\ExampleFunction.cs" />
+    <Compile Include="Interfaces\DCS\Template\TemplateInterface.cs" />
+    <Compile Include="Interfaces\DirectX\Functions\IHotasFunctions.cs" />
+    <Compile Include="Interfaces\DirectX\Functions\VirpilHotasIndicators.cs" />
+    <Compile Include="Interfaces\DirectX\Functions\ThrustmasterWarthogThrottleIndicators.cs" />
+    <Compile Include="Interfaces\Keyboard\Input\KeyboardInput.cs" />
+    <Compile Include="Interfaces\Keyboard\Input\KeyTriggers.cs" />
+    <Compile Include="Interfaces\Keyboard\Input\KeyTriggersFixed.cs" />
+    <Compile Include="Interfaces\Keyboard\Input\KeyTriggersWithModifiers.cs" />
+    <Compile Include="Json\BindingValueUnit\ConverterForJsonNet.cs" />
+    <Compile Include="Json\BindingValueUnit\SchemaGenerationProviderForJsonNet.cs" />
+    <Compile Include="Json\BindingValue\ConverterForJsonNet.cs" />
+    <Compile Include="Interfaces\DCS\Common\CanonicalFunctionOrder.cs" />
+    <Compile Include="Json\Function\ConverterForJsonNet.cs" />
+    <Compile Include="Json\InterfaceFile.cs" />
+    <Compile Include="Json\NetworkFunction\SchemaGenerationProviderForJsonNet.cs" />
+    <Compile Include="UnitConverters\RawConverters.cs" />
+    <Compile Include="Units\BarUnit.cs" />
+    <Compile Include="Units\MillbarUnit.cs" />
+    <Compile Include="Util\FileUtility.cs" />
+    <Compile Include="Util\ModuleUtility.cs" />
+    <Compile Include="ProfileInstances.cs" />
+    <Compile Include="StructuredInfo.cs" />
+    <Compile Include="Tools\Capabilities\IProfileTool.cs" />
+    <Compile Include="Tools\Capabilities\ISelectionAwareTool.cs" />
+    <Compile Include="Tools\HeliosToolDescriptor.cs" />
+    <Compile Include="Tools\MenuItemModel.cs" />
+    <Compile Include="Tools\MenuSectionModel.cs" />
+    <Compile Include="Controls\IndicatorVariableBrightness.cs" />
+    <Compile Include="Tools\Capabilities\IMenuSectionFactory.cs" />
+    <Compile Include="Util\DCS\DCSOptions.cs" />
+    <Compile Include="Interfaces\DCS\Common\IndicatorDimmable.cs" />
+    <Compile Include="Interfaces\DCS\Common\RemoteConfigurationSection.xaml.cs">
+      <DependentUpon>RemoteConfigurationSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\HeliosInformation\HeliosInformationInterfaceEditor.xaml.cs">
+      <DependentUpon>HeliosInformationInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\HeliosInformation\HeliosInformationInterface.cs" />
+    <Compile Include="Interfaces\Profile\ProfileInterfaceEditor.xaml.cs">
+      <DependentUpon>ProfileInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Profile\ProfileSettings.cs" />
+    <Compile Include="Interfaces\Profile\ProfileInterfaceViewModel.cs" />
+    <Compile Include="Util\CodeLine.cs" />
+    <Compile Include="Controls\TextScalingMode.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSFunction.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSFunctionPair.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSFunctionWithActions.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSFunctionWithButtons.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSVehicleSelection.cs" />
+    <Compile Include="Interfaces\DCS\Common\ExportConfigurationSection.xaml.cs">
+      <DependentUpon>ExportConfigurationSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DCS\Common\ExportFilesOutputSection.xaml.cs">
+      <DependentUpon>ExportFilesOutputSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DCS\Common\ExportFileHandling.cs" />
+    <Compile Include="Interfaces\DCS\Common\ExportLuaOutputSection.xaml.cs">
+      <DependentUpon>ExportLuaOutputSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DCS\Common\NetworkTrigger.cs" />
+    <Compile Include="Interfaces\DCS\Common\NetworkTriggerValue.cs" />
+    <Compile Include="Interfaces\DCS\Common\PhantomMonitorFixSection.xaml.cs">
+      <DependentUpon>PhantomMonitorFixSection.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DCS\Generic\GenericInterfaceEditor.xaml.cs">
+      <DependentUpon>GenericInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Json\InterfaceExport.cs" />
+    <Compile Include="Interfaces\Capabilities\ISoftInterface.cs" />
+    <Compile Include="Json\JsonLicenses.cs" />
+    <Compile Include="Util\CommandLineOptions.cs" />
+    <Compile Include="Util\DesignTimeControl.cs" />
+    <Compile Include="Util\DesignTimeInterface.cs" />
+    <Compile Include="Util\ElevatedProcess.cs" />
+    <Compile Include="Util\ElevatedProcessResponsePipe.cs" />
+    <Compile Include="Util\Shadow\IShadowVisualParent.cs" />
+    <Compile Include="Util\Shadow\RawMonitorEventArgs.cs" />
+    <Compile Include="Util\Shadow\RawViewportEventArgs.cs" />
+    <Compile Include="Util\Shadow\ShadowMonitorBase.cs" />
+    <Compile Include="Util\Shadow\ShadowViewportEventArgs.cs" />
+    <Compile Include="Util\Shadow\ShadowVisual.cs" />
+    <Compile Include="Util\Shadow\ViewportViewModel.cs" />
+    <Compile Include="Windows\Controls\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDeserializer.cs" />
+    <Compile Include="BindingValue.cs" />
+    <Compile Include="BindingValueSources.cs" />
+    <Compile Include="BindingValueType.cs" />
+    <Compile Include="BindingValueUnit.cs" />
+    <Compile Include="BindingValueUnitConverter.cs" />
+    <Compile Include="BindingValueUnits.cs" />
+    <Compile Include="BindingValueUnitType.cs" />
+    <Compile Include="CalibrationPointCollectionDouble.cs" />
+    <Compile Include="CalibrationPointCollectionLong.cs" />
+    <Compile Include="CalibrationPointDouble.cs" />
+    <Compile Include="CalibrationPointLong.cs" />
+    <Compile Include="ComponentModel\ComponentUnsupportedSeverity.cs" />
+    <Compile Include="Controls\Capabilities\ILinearControl.cs" />
+    <Compile Include="Controls\Capabilities\IRotaryControl.cs" />
+    <Compile Include="Controls\Capabilities\IPulsedControl.cs" />
+    <Compile Include="Controls\PotentiometerEndless.cs" />
+    <Compile Include="Controls\PotentiometerKnob.cs" />
+    <Compile Include="Controls\PotentiometerWithTranslate.cs" />
+    <Compile Include="Controls\PotentiometerWithTranslateAppearanceEditor.xaml.cs">
+      <DependentUpon>PotentiometerWithTranslateAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PotentiometerWithTranslateBehaviorEditor.xaml.cs">
+      <DependentUpon>PotentiometerWithTranslateBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RotaryInteractionEditor.xaml.cs">
+      <DependentUpon>RotaryInteractionEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RotaryInteraction.cs" />
+    <Compile Include="Controls\RotaryKnob.cs" />
+    <Compile Include="Controls\Special\ViewportExtentBehaviorEditor.xaml.cs">
+      <DependentUpon>ViewportExtentBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\ViewportExtentRenderer.cs" />
+    <Compile Include="Controls\ControlEventArgs.cs" />
+    <Compile Include="Controls\Special\Wire.cs" />
+    <Compile Include="HeliosXmlModel.cs" />
+    <Compile Include="Interfaces\Capabilities\IDynamicBindings.cs" />
+    <Compile Include="Interfaces\Capabilities\IReadyCheck.cs" />
+    <Compile Include="Interfaces\Capabilities\IViewportProvider.cs" />
+    <Compile Include="Windows\Controls\CalibrationEditorDouble.xaml.cs">
+      <DependentUpon>CalibrationEditorDouble.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\FolderPicker.xaml.cs">
+      <DependentUpon>FolderPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\InterfaceStatusItemControl.xaml.cs">
+      <DependentUpon>InterfaceStatusItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\StructuredInfoControl.xaml.cs">
+      <DependentUpon>StructuredInfoControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\StructuredInfoListControl.xaml.cs">
+      <DependentUpon>StructuredInfoListControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ViewModel\EditableComboBoxModel.cs" />
+    <Compile Include="Windows\ViewModel\InstallationResultViewModel.cs" />
+    <Compile Include="Windows\ViewModel\ShareInstallationResults.cs" />
+    <Compile Include="Windows\ViewModel\VersionCheckViewModel.cs" />
+    <Content Include="Docs\Licenses\Fonts\DSEGxClassic keshikan.net\DSEGxClassic License.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\Licenses\Fonts\LED Counter-7\LED Counter-7.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Resources\helios-bug-report.txt" />
+    <Resource Include="Images\General\metronome_wire.png" />
+    <Content Include="Templates\Base\Panels\RWR Rings.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Rockers\wheel-dark-down.png" />
+    <Resource Include="Images\Rockers\wheel-dark-horiz-left.png" />
+    <Resource Include="Images\Rockers\wheel-dark-horiz-norm.png" />
+    <Resource Include="Images\Rockers\wheel-dark-horiz-right.png" />
+    <Resource Include="Images\Rockers\wheel-dark-norm.png" />
+    <Resource Include="Images\Rockers\wheel-dark-up.png" />
+    <Content Include="Templates\Base\Special\ExportMFDinVR.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\General\simple_computation_wire.png" />
+    <Resource Include="Images\TransparentImage.png" />
+    <Content Include="Templates\Base\Simulator Viewports\A29B_BFI.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_LEFT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_RIGHT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_UFCP.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A4E_RADAR.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Text Displays\Label.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Page Include="Controls\BackgroundImageAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BacklitPushButtonAppearanceEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\GlassOpacityAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\HeliosPanelBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\BarGaugeAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ImageAssetLocationAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ImageTranslucentBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DualIndicatorPushButtonAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\AnimationAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\DCSMonitorScriptAppenderAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\ExternalIndicatorAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\LinearPotentiometerBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RotarySwitchBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\CalibrationFilterBehaviorEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="Gauges\A-10\DigitalClock\ClockSecondHand.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Controls\NumericTextDisplayBehaviorPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RockerSwitchAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\ScreenReplicatorAdjustableAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Special\SimpleComputationWireBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\DCSMonitorSetupScriptAppenderBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\MetronomeBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextualDisplayEnablerAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TimerPanelBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Gauges\A-10\IAS\needle_ias_limit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarDisplay40Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarDisplay30Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarDisplay41Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarDisplay29Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\SegmentBarDisplay30.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\General\Green_LED.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\Common\needle_a.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\Common\needle_b.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\VR_Goggles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Images\Custom\RWRRings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Interfaces\DCS\Common\RemoteConfigurationSection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\DCS\Soft\SoftInterfaceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\HeliosInformation\HeliosInformationInterfaceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\Profile\ProfileInterfaceEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\CalibrationEditorDouble.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\FolderPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\InterfaceStatusResources.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PotentiometerWithTranslateAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PotentiometerWithTranslateBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RotaryInteractionEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\ControlRouter\ControlRouterEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\DCS\Common\ExportConfigurationSection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\DCS\Common\ExportFilesOutputSection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\DCS\Common\ExportLuaOutputSection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\DCS\Common\PhantomMonitorFixSection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\DCS\Generic\GenericInterfaceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Interfaces\Unsupported\UnsupportedInterfaceEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Editor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Interfaces\Capabilities\IHeliosInterfaceFactoryAsync.cs" />
+    <Compile Include="Interfaces\Common\HeliosInterfaceWithXml.cs" />
+    <Compile Include="Interfaces\Common\StatusReportNotifyAsyncOnce.cs" />
+    <Compile Include="Interfaces\ControlRouter\ControlRouter.cs" />
+    <Compile Include="Interfaces\ControlRouter\ControlRouterEditor.xaml.cs">
+      <DependentUpon>ControlRouterEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\ControlRouter\ControlRouterModel.cs" />
+    <Compile Include="Interfaces\ControlRouter\ControlRouterPort.cs" />
+    <Compile Include="Interfaces\ControlRouter\ControlRouterViewModel.cs" />
+    <Compile Include="Interfaces\Unsupported\UnsupportedInterface.cs" />
+    <Compile Include="Interfaces\Unsupported\UnsupportedInterfaceFactory.cs" />
+    <Compile Include="Interfaces\Unsupported\UnsupportedInterfaceEditor.xaml.cs">
+      <DependentUpon>UnsupportedInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Util\DesignTimeEditorResources.cs" />
+    <Compile Include="Util\OnceLogger.cs" />
+    <Compile Include="HeliosApplication.cs" />
+    <Compile Include="IInstallation.cs" />
+    <Compile Include="Interfaces\Capabilities\IExtendedDescription.cs" />
+    <Compile Include="Interfaces\Common\InterfaceStatusScanner.cs" />
+    <AdditionalFiles Include="TimeStamp.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TimeStamp.g.cs</LastGenOutput>
+    </AdditionalFiles>
+    <Compile Include="TimeStamp.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeStamp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Anonymizer.cs" />
+    <Compile Include="Util\DCS\DCSConfiguration.cs" />
+    <Compile Include="Interfaces\Capabilities\IResetMonitorsObserver.cs" />
+    <Compile Include="ISettingsManager2.cs" />
+    <Compile Include="Interfaces\Capabilities\IStatusReportNotify.cs" />
+    <Compile Include="Controls\CustomGaugeNeedle.cs" />
+    <Compile Include="Controls\CustomDrum.cs" />
+    <Compile Include="Controls\CustomTape.cs" />
+    <Compile Include="Controls\CustomDrumAppearanceEditor.xaml.cs">
+      <DependentUpon>CustomDrumAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomTapeAppearanceEditor.xaml.cs">
+      <DependentUpon>CustomTapeAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageTranslucent.cs" />
+    <Compile Include="Controls\ImageTranslucentAppearanceEditor.xaml.cs">
+      <DependentUpon>ImageTranslucentAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageTranslucentRenderer.cs" />
+    <Compile Include="Controls\Special\ViewportExtent.cs" />
+    <Compile Include="Gauges\F-16\HydraulicPressure\HydraulicPressure.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSExportConfiguration.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSExportProtocol.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSInterfaceEditor.xaml.cs">
+      <DependentUpon>DCSInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DCS\Common\DCSPhantomMonitorFix.cs" />
+    <Compile Include="Interfaces\Capabilities\IProfileAwareInterface.cs" />
+    <Compile Include="Interfaces\DCS\Common\SilentValueConsumer.cs" />
+    <Compile Include="NonClickableZone.cs" />
+    <Compile Include="Collections\HeliosObjectCollection.cs" />
+    <Compile Include="Collections\KeyedObservableCollection.cs" />
+    <Compile Include="Collections\NoResetObservablecollection.cs" />
+    <Compile Include="ComponentModel\HeliosControlAttribute.cs" />
+    <Compile Include="ComponentModel\HeliosInterfaceAttribute.cs" />
+    <Compile Include="ComponentModel\HeliosModuleAttribute.cs" />
+    <Compile Include="ComponentModel\HeliosPropertyEditorAttribute.cs" />
+    <Compile Include="ComponentModel\HeliosUnitConverterAttribute.cs" />
+    <Compile Include="ComponentModel\IPropertyNotification.cs" />
+    <Compile Include="ComponentModel\PropertyNotificationEventArgs.cs" />
+    <Compile Include="CompositeVisual.cs" />
+    <Compile Include="ConfigManager.cs" />
+    <Compile Include="Controls\ClickType.cs" />
+    <Compile Include="Controls\CustomGauge.cs" />
+    <Compile Include="Controls\CustomGaugeAppearanceEditor.xaml.cs">
+      <DependentUpon>CustomGaugeAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomGaugeBehaviorEditor.xaml.cs">
+      <DependentUpon>CustomGaugeBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomGaugeRenderer.cs" />
+    <Compile Include="Controls\CustomNeedle.cs" />
+    <Compile Include="Controls\GuardedThreeWayAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>GuardedThreeWayAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuardedThreeWayBehaviorPropertyEditor.xaml.cs">
+      <DependentUpon>GuardedThreeWayBehaviorPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuardedThreeWayToggle.cs" />
+    <Compile Include="Controls\GuardedThreeWayToggleRenderer.cs" />
+    <Compile Include="Controls\GuardedToggleSwitch.cs" />
+    <Compile Include="Controls\GuardedToggleSwitchAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>GuardedToggleSwitchAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuardedToggleSwitchBehaviorPropertyEditor.xaml.cs">
+      <DependentUpon>GuardedToggleSwitchBehaviorPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuardedToggleSwitchRenderer.cs" />
+    <Compile Include="Controls\GuardPosition.cs" />
+    <Compile Include="Controls\GuardedSwitch.cs" />
+    <Compile Include="Controls\GuardedSwitchAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>GuardedSwitchAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuardedSwitchBehaviorPropertyEditor.xaml.cs">
+      <DependentUpon>GuardedSwitchBehaviorPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GuardedSwitchRenderer.cs" />
+    <Compile Include="Controls\HatSwitch.cs" />
+    <Compile Include="Controls\HatSwitchAppearanceEditor.xaml.cs">
+      <DependentUpon>HatSwitchAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HatSwitchPosition.cs" />
+    <Compile Include="Controls\HatSwitchRenderer.cs" />
+    <Compile Include="Controls\HeliosPanel.cs" />
+    <Compile Include="Controls\HeliosPanelAppearanceEditor.xaml.cs">
+      <DependentUpon>HeliosPanelAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HeliosPanelRenderer.cs" />
+    <Compile Include="Controls\ImageDecorationBase.cs" />
+    <Compile Include="Controls\ImageDecorationAppearanceEditor.xaml.cs">
+      <DependentUpon>ImageDecorationAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageDecorationRenderer.cs" />
+    <Compile Include="Controls\IndicatorAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>IndicatorAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextDisplayRenderer.cs" />
+    <Compile Include="Controls\TextDisplay.cs" />
+    <Compile Include="Controls\Indicator.cs" />
+    <Compile Include="Controls\TextDisplayAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>TextDisplayAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IndicatorPushButton.cs" />
+    <Compile Include="Controls\IndicatorPushButtonAppearanceEditor.xaml.cs">
+      <DependentUpon>IndicatorPushButtonAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IndicatorPushButtonRenderer.cs" />
+    <Compile Include="Controls\IndicatorRenderer.cs" />
+    <Compile Include="Controls\KneeBoard.cs" />
+    <Compile Include="Controls\KneeBoardAddPositionUndoEvent.cs" />
+    <Compile Include="Controls\KneeBoardAppearanceEditor.xaml.cs">
+      <DependentUpon>KneeBoardAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KneeBoardBehaviorEditor.xaml.cs">
+      <DependentUpon>KneeBoardBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KneeBoardDeletePositionUndoEvent.cs" />
+    <Compile Include="Controls\KneeBoardPosition.cs" />
+    <Compile Include="Controls\KneeBoardPositionChangeArgs.cs" />
+    <Compile Include="Controls\KneeBoardPositionCollection.cs" />
+    <Compile Include="Controls\KneeboardRenderer.cs" />
+    <Compile Include="Controls\KneeboardSwitch.cs" />
+    <Compile Include="Controls\KneeboardSwitchAppearanceEditor.xaml.cs">
+      <DependentUpon>KneeboardSwitchAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KneeboardSwitchBehaviorEditor.xaml.cs">
+      <DependentUpon>KneeboardSwitchBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\KneeboardSwitchPosition.cs" />
+    <Compile Include="Controls\KneeboardSwitchRenderer.cs" />
+    <Compile Include="Controls\KneeboardSwitchType.cs" />
+    <Compile Include="Controls\LineDecoration.cs" />
+    <Compile Include="Controls\LineDecorationAppearancePropertyEditor.xaml.cs">
+      <DependentUpon>LineDecorationAppearancePropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LineDecorationRenderer.cs" />
+    <Compile Include="FontManager.cs" />
+    <Compile Include="Gauges\A-10\A10CDevice\A10CDevice.cs" />
+    <Compile Include="Controls\Metric.cs" />
+    <Compile Include="Controls\MetricRenderer.cs" />
+    <Compile Include="Controls\PulseType.cs" />
+    <Compile Include="Controls\RectangleFill.cs" />
+    <Compile Include="Controls\RectangleFillAppearanceEditor.xaml.cs">
+      <DependentUpon>RectangleFillAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RectangleFillRenderer.cs" />
+    <Compile Include="Gauges\F-14B\F14BDevice\F14BDevice.cs" />
+    <Compile Include="Gauges\A-10\MFD\MFD_A10.cs" />
+    <Compile Include="Gauges\F-16\MFD\MFD_F16.cs" />
+    <Compile Include="Gauges\MFD.cs" />
+    <Compile Include="Controls\Potentiometer.cs" />
+    <Compile Include="Controls\PotentiometerAppearanceEditor.xaml.cs">
+      <DependentUpon>PotentiometerAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PotentiometerBehaviorEditor.xaml.cs">
+      <DependentUpon>PotentiometerBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PushButton.cs" />
+    <Compile Include="Controls\PushButtonAppearanceEditor.xaml.cs">
+      <DependentUpon>PushButtonAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PushButtonBehaviorEditor.xaml.cs">
+      <DependentUpon>PushButtonBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PushButtonGlyph.cs" />
+    <Compile Include="Controls\PushButtonRenderer.cs" />
+    <Compile Include="Controls\PushButtonType.cs" />
+    <Compile Include="Controls\RectangleDecoration.cs" />
+    <Compile Include="Controls\RectangleDecorationAppearanceEditor.xaml.cs">
+      <DependentUpon>RectangleDecorationAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RectangleDecorationRenderer.cs" />
+    <Compile Include="Controls\Rotary.cs" />
+    <Compile Include="Controls\RotaryEncoder.cs" />
+    <Compile Include="Controls\RotaryEncoderAppearanceEditor.xaml.cs">
+      <DependentUpon>RotaryEncoderAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RotaryEncoderBehaviorEditor.xaml.cs">
+      <DependentUpon>RotaryEncoderBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RotaryKnobRenderer.cs" />
+    <Compile Include="Controls\RotarySwitch.cs" />
+    <Compile Include="Controls\RotarySwitchAddPositionUndoEvent.cs" />
+    <Compile Include="Controls\RotarySwitchAppearanceEditor.xaml.cs">
+      <DependentUpon>RotarySwitchAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LinearPotentiometerDetentBehaviorEditor.xaml.cs">
+      <DependentUpon>LinearPotentiometerDetentBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RotarySwitchDeletePositionUndoEvent.cs" />
+    <Compile Include="Controls\RotarySwitchPosition.cs" />
+    <Compile Include="Controls\RotarySwitchPositionChangeArgs.cs" />
+    <Compile Include="Controls\RotarySwitchPositionCollection.cs" />
+    <Compile Include="Controls\RotarySwitchRenderer.cs" />
+    <Compile Include="Controls\Special\ScreenReplicator.cs" />
+    <Compile Include="Controls\Special\ScreenReplicatorBehaviorPropertyEditor.xaml.cs">
+      <DependentUpon>ScreenReplicatorBehaviorPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Special\ScreenReplicatorRenderer.cs" />
+    <Compile Include="Controls\TextDecoration.cs" />
+    <Compile Include="Controls\TextDecorationAppearanceEditor.xaml.cs">
+      <DependentUpon>TextDecorationAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextDecorationRenderer.cs" />
+    <Compile Include="Controls\ThreeWayToggleSwitch.cs" />
+    <Compile Include="Controls\ThreeWayToggleSwitchAppearanceEditor.xaml.cs">
+      <DependentUpon>ThreeWayToggleSwitchAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ThreeWayToggleSwitchBehaviorEditor.xaml.cs">
+      <DependentUpon>ThreeWayToggleSwitchBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ThreeWayToggleSwitchPosition.cs" />
+    <Compile Include="Controls\ThreeWayToggleSwitchRenderer.cs" />
+    <Compile Include="Controls\ThreeWayToggleSwitchType.cs" />
+    <Compile Include="Controls\ToggleSwitch.cs" />
+    <Compile Include="Controls\ToggleSwitchAppearanceEditor.xaml.cs">
+      <DependentUpon>ToggleSwitchAppearanceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToggleSwitchBase.cs" />
+    <Compile Include="Controls\ToggleSwitchBehaviorEditor.xaml.cs">
+      <DependentUpon>ToggleSwitchBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToggleSwitchOrientation.cs" />
+    <Compile Include="Controls\ToggleSwitchPosition.cs" />
+    <Compile Include="Controls\ToggleSwitchRenderer.cs" />
+    <Compile Include="Controls\ToggleSwitchType.cs" />
+    <Compile Include="DisplayManager.cs" />
+    <Compile Include="DisplayOrientation.cs" />
+    <Compile Include="EnumConverter.cs" />
+    <Compile Include="Gauges\A-10\ADI\ADI.cs" />
+    <Compile Include="Gauges\A-10\ADI\BackupADI.cs" />
+    <Compile Include="Gauges\A-10\Altimeter\Altimeter.cs" />
+    <Compile Include="Gauges\A-10\AOA\AOA.cs" />
+    <Compile Include="Gauges\A-10\ApuEGT\ApuEGT.cs" />
+    <Compile Include="Gauges\A-10\ApuRPM\ApuRPM.cs" />
+    <Compile Include="Gauges\A-10\CabinPressure\CabinPressure.cs" />
+    <Compile Include="Gauges\A-10\EngineRPM\EngineRPM.cs" />
+    <Compile Include="Gauges\A-10\EngineTemp\EngineTemp.cs" />
+    <Compile Include="Gauges\A-10\FanRPM\FanRPM.cs" />
+    <Compile Include="Gauges\A-10\Flaps\Flaps.cs" />
+    <Compile Include="Gauges\A-10\FuelFlow\FuelFlow.cs" />
+    <Compile Include="Gauges\A-10\FuelGauge\FuelGauge.cs" />
+    <Compile Include="Gauges\A-10\HARS\HARSSync.cs" />
+    <Compile Include="Gauges\A-10\HSI\HSI.cs" />
+    <Compile Include="Gauges\A-10\HSI\HSIBehaviorEditor.xaml.cs">
+      <DependentUpon>HSIBehaviorEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\A-10\Hydraulic\Hydraulic.cs" />
+    <Compile Include="Gauges\A-10\IAS\IAS.cs" />
+    <Compile Include="Gauges\A-10\ILSFrequency\ILSFrequency.cs" />
+    <Compile Include="Gauges\A-10\LiquidOxygen\LiquidOxygen.cs" />
+    <Compile Include="Gauges\A-10\OilPressure\OilPressure.cs" />
+    <Compile Include="Gauges\A-10\OxygenPressure\OxygenPressure.cs" />
+    <Compile Include="Gauges\A-10\TACANChannel\TACANChannel.cs" />
+    <Compile Include="Gauges\A-10\TISLCodeWheel\TISLCodeWheel.cs" />
+    <Compile Include="Gauges\A-10\VVI\VVI.cs" />
+    <Compile Include="Controls\BackgroundImageRenderer.cs" />
+    <Compile Include="Gauges\BaseGauge.cs" />
+    <Compile Include="Util\CommonCommandLineOptions.cs" />
+    <Compile Include="Util\DCS\MockInstallationLocations.cs" />
+    <Compile Include="Util\EnumBooleanConverter.cs" />
+    <Compile Include="Util\XamlFirewall.cs" />
+    <Compile Include="Windows\BindingProxy.cs" />
+    <Compile Include="Windows\Controls\DialogWindow.cs" />
+    <Compile Include="Windows\ExceptionViewer.cs" />
+    <Compile Include="Util\HeliosUndoBatch.cs" />
+    <Compile Include="Interfaces\Common\InterfaceStatus.cs" />
+    <Compile Include="RunningVersion.cs" />
+    <Compile Include="Windows\Controls\FilePicker.xaml.cs">
+      <DependentUpon>FilePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\DefaultDialogWindow.xaml.cs">
+      <DependentUpon>DefaultDialogWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\ImagePicker.xaml.cs">
+      <DependentUpon>ImagePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\ShareDialog.xaml.cs">
+      <DependentUpon>ShareDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Dialog.cs" />
+    <Compile Include="Windows\HeliosViewModel.cs" />
+    <Compile Include="Windows\InstallationDialogs.cs" />
+    <Compile Include="Windows\RelayCommand.cs" />
+    <Compile Include="Windows\ScrollViewerHelper.cs" />
+    <Compile Include="Windows\SharedCommands.cs" />
+    <Compile Include="Windows\ShowModalParameter.cs" />
+    <Compile Include="Windows\ViewModelCollection.cs" />
+    <Compile Include="Windows\ViewModel\InterfaceStatusViewItem.cs" />
+    <Compile Include="Windows\ViewModel\InterfaceStatusViewSection.cs" />
+    <Compile Include="Windows\ViewModel\InterfaceStatusViewModel.cs" />
+    <Compile Include="Util\KnownLinks.cs" />
+    <Compile Include="Windows\ViewModel\MockInterfaceStatusView.cs" />
+    <Compile Include="Windows\ViewModel\Share.cs" />
+    <Compile Include="Windows\ViewModel\ShareInterfaceStatus.cs" />
+    <None Include="app.config" />
+    <None Include="Collections\Assets\Helios_ADI.odg" />
+    <None Include="Collections\Assets\render.cmd" />
+    <Content Include="Fonts\A-10C_ALQ_213.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\A-10C_ARC_164.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\A-10C_Digital_Clock.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\DSEG14Classic-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\DSEG7Classic-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\F-15E_Up_Front_Controller.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\F-16C_Viper_DED.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\FA-18C_Hornet_IFEI.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\FA-18C_Hornet_Up_Front_Controller.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\Helios-A-10C_ARC-210_Large.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\Helios-A-10C_ARC-210_Small.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\M-2000C PCA 16 Segment.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\MonospacedLEDCounter7.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\MS33558.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="BindingValueUnits.cd" />
+    <Content Include="Fonts\DSEG14Classic-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\DSEG7Classic-Regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\Helios-A-10C_ARC-210_Small.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\Helios-A-10C_ARC-210_Large.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Fonts\F-15E_Up_Front_Controller.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Fonts\MonospacedLEDCounter7.ttf" />
+    <None Include="Images\A-10\readme.md" />
+    <Resource Include="Interfaces\DCS\A10C\ExportFunctionsA10C2.lua" />
+    <None Include="Interfaces\Falcon\readme.md" />
+    <Resource Include="Interfaces\Falcon\OpenFalcon\ded.png" />
+    <Resource Include="Interfaces\Falcon\OpenFalcon\hud.png" />
+    <Resource Include="Interfaces\Falcon\OpenFalcon\mfd_left.png" />
+    <Resource Include="Interfaces\Falcon\OpenFalcon\mfd_right.png" />
+    <Resource Include="Interfaces\Falcon\OpenFalcon\pfl.png" />
+    <Resource Include="Interfaces\Falcon\OpenFalcon\rwr.png" />
+    <Resource Include="Interfaces\Falcon\RWR\rwr_bezel.png" />
+    <Resource Include="Images\General\wire.png" />
+    <Resource Include="Images\Custom\translate_rotate.png" />
+    <Resource Include="Images\Custom\translate.png" />
+    <None Include="Collections\Assets\Helios_ADI.svg" />
+    <Resource Include="Images\General\HeliosSimplifiedIcon.png" />
+    <Content Include="Controls\Special\readme.txt" />
+    <Resource Include="Images\General\calibration.png" />
+    <Resource Include="Images\General\memory_wire.png" />
+    <Resource Include="Images\Buttons\backlit.png" />
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\Licenses\AvalonDock\LICENSE.txt" />
+    <Content Include="Docs\Licenses\CommandLineParser\LICENSE.txt" />
+    <Content Include="Docs\Licenses\EOSSharp\LICENSE.txt" />
+    <Content Include="Docs\Licenses\GoogleDiffMatchPatch\LICENSE.txt" />
+    <Content Include="Docs\Licenses\HidSharp\LICENSE.txt" />
+    <Content Include="Docs\Licenses\KeraLua\LICENSE.txt" />
+    <Content Include="Docs\Licenses\LibGit2Sharp.NativeBinaries\LICENSE.txt" />
+    <Content Include="Docs\Licenses\LibGit2Sharp\LICENSE.txt" />
+    <Content Include="Docs\Licenses\NLog\LICENSE.txt" />
+    <Content Include="Docs\Licenses\NLua\LICENSE.txt" />
+    <Content Include="Docs\Licenses\Phidget\License.txt" />
+    <Content Include="Docs\Licenses\SharpDX.DirectInput\LICENSE.txt" />
+    <Content Include="Docs\Licenses\SharpDX\LICENSE.txt" />
+    <None Include="HeliosNotificationObject.cd" />
+    <None Include="Gauges\GaugeTextDisplay.cs" />
+    <Compile Include="Gauges\F-16\ADI\ADI.cs" />
+    <Compile Include="Gauges\F-16\Airspeed\Airspeed.cs" />
+    <Compile Include="Gauges\F-16\Altimeter\Altimeter.cs" />
+    <Compile Include="Gauges\F-16\AOA\AOA.cs" />
+    <Compile Include="Gauges\F-16\FTIT\FTIT.cs" />
+    <Compile Include="Gauges\F-16\FuelFlow\FuelFlow.cs" />
+    <Compile Include="Gauges\F-16\HSI\HSI.cs" />
+    <Compile Include="Gauges\F-16\Nozzle\Nozzle.cs" />
+    <Compile Include="Gauges\F-16\OilPressure\OilPressure.cs" />
+    <Compile Include="Gauges\F-16\RPM\RPM.cs" />
+    <Compile Include="Gauges\F-16\Trim\PitchTrim.cs" />
+    <Compile Include="Gauges\F-16\Trim\RollTrim.cs" />
+    <Compile Include="Gauges\F-16\VVI\VVI.cs" />
+    <Compile Include="Gauges\GaugeComponent.cs" />
+    <Compile Include="Gauges\GaugeComponentCollection.cs" />
+    <Compile Include="Gauges\GaugeDrumCounter.cs" />
+    <Compile Include="Gauges\GaugeImage.cs" />
+    <Compile Include="Gauges\GaugeNeedle.cs" />
+    <Compile Include="Gauges\GaugeRectangle.cs" />
+    <Compile Include="Gauges\GaugeRenderer.cs" />
+    <Compile Include="HeliosAction.cs" />
+    <Compile Include="HeliosActionCollection.cs" />
+    <Compile Include="HeliosActionEventArgs.cs" />
+    <Compile Include="HeliosBinding.cs" />
+    <Compile Include="HeliosBindingCollection.cs" />
+    <Compile Include="HeliosDescriptor.cs" />
+    <Compile Include="HeliosDescriptorCollection.cs" />
+    <Compile Include="HeliosInit.cs" />
+    <Compile Include="HeliosInterface.cs" />
+    <Compile Include="HeliosInterfaceCollection.cs" />
+    <Compile Include="HeliosInterfaceDescriptor.cs" />
+    <Compile Include="HeliosInterfaceDescriptorCollection.cs" />
+    <Compile Include="HeliosInterfaceFactory.cs" />
+    <Compile Include="HeliosObject.cs" />
+    <Compile Include="HeliosProfile.cs" />
+    <Compile Include="HeliosPropertyEditorDescriptor.cs" />
+    <Compile Include="HeliosPropertyEditorDescriptorCollection.cs" />
+    <Compile Include="HeliosSerializer.cs" />
+    <Compile Include="HeliosTemplate.cs" />
+    <Compile Include="HeliosTemplateCollection.cs" />
+    <Compile Include="HeliosTrigger.cs" />
+    <Compile Include="HeliosTriggerCollection.cs" />
+    <Compile Include="HeliosTriggerEventArgs.cs" />
+    <Compile Include="HeliosValue.cs" />
+    <Compile Include="HeliosValueCollection.cs" />
+    <Compile Include="HeliosVisual.cs" />
+    <Compile Include="HeliosVisualCollection.cs" />
+    <Compile Include="HeliosVisualContainer.cs" />
+    <Compile Include="HeliosVisualRenderer.cs" />
+    <Compile Include="HeliosVisualRotation.cs" />
+    <Compile Include="IBindingAction.cs" />
+    <Compile Include="IBindingElement.cs" />
+    <Compile Include="IBindingTrigger.cs" />
+    <Compile Include="IHeliosValue.cs" />
+    <Compile Include="IImageManager.cs" />
+    <Compile Include="ImageAlignment.cs" />
+    <Compile Include="ImageAlignmentPlus.cs" />
+    <Compile Include="ImageManager.cs" />
+    <Compile Include="IModuleManager.cs" />
+    <Compile Include="Interfaces\DCS\A10C\A10CInterface.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\Altimeter.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\HSIMiles.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\ILSFrequency.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\TACANChannel.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\TotalFuel.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\VHFPresetSelector.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\VHFRadioEncoder.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\VHFRadioEncoder1.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\VHFRadioEncoder3.cs" />
+    <Compile Include="Interfaces\DCS\A10C\Functions\VHFRadioEncoder4.cs" />
+    <Compile Include="Interfaces\DCS\Common\DualNetworkValue.cs" />
+    <Compile Include="Interfaces\DCS\Common\DualRocker.cs" />
+    <Compile Include="StatusReportItem.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSInterface.cs" />
+    <Compile Include="Interfaces\DCS\F14B\F14BInterface.cs" />
+    <Compile Include="Interfaces\DCS\Common\AbsoluteEncoder.cs" />
+    <Compile Include="Interfaces\DCS\Common\Axis.cs" />
+    <Compile Include="Interfaces\DCS\Common\DCSDataElement.cs" />
+    <Compile Include="Interfaces\DCS\Common\FlagValue.cs" />
+    <Compile Include="Interfaces\DCS\Common\GuardedSwitch.cs" />
+    <Compile Include="Interfaces\DCS\Common\HatSwitch.cs" />
+    <Compile Include="Interfaces\DCS\Common\IndicatorPushButton.cs" />
+    <Compile Include="Interfaces\DCS\Common\LockedEncoder.cs" />
+    <Compile Include="Interfaces\DCS\Common\NetworkValue.cs" />
+    <Compile Include="Interfaces\DCS\Common\PushButton.cs" />
+    <Compile Include="Interfaces\DCS\Common\Rocker.cs" />
+    <Compile Include="Interfaces\DCS\Common\RotaryEncoder.cs" />
+    <Compile Include="Interfaces\DCS\Common\ScaledNetworkValue.cs" />
+    <Compile Include="Interfaces\DCS\Common\Switch.cs" />
+    <Compile Include="Interfaces\DCS\Common\SwitchPosition.cs" />
+    <Compile Include="Interfaces\DCS\Common\Text.cs" />
+    <Compile Include="Interfaces\DCS\FC3\FC3Interface.cs" />
+    <Compile Include="Interfaces\DCS\Generic\GenericInterface.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerAxis.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerButton.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerFunction.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerGuid.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerInterface.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerInterfaceEditor.xaml.cs">
+      <DependentUpon>DirectXControllerInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\DirectX\DirectXControllerInterfaceFactory.cs" />
+    <Compile Include="Interfaces\DirectX\DirectXControllerPOVHat.cs" />
+    <Compile Include="Interfaces\DTSCard\DTSCard.cs" />
+    <Compile Include="Interfaces\DTSCard\DTSCardInterface.cs" />
+    <Compile Include="Interfaces\DTSCard\DTSCardFactory.cs" />
+    <Compile Include="Interfaces\Eos\EosAnalogInput.cs" />
+    <Compile Include="Interfaces\Eos\EosBacklight.cs" />
+    <Compile Include="Interfaces\Eos\EosBoard.cs" />
+    <Compile Include="Interfaces\Eos\EosBusType.cs" />
+    <Compile Include="Interfaces\Eos\EosCoilOutput.cs" />
+    <Compile Include="Interfaces\Eos\EosDigitalInput.cs" />
+    <Compile Include="Interfaces\Eos\EosDirectSerial.cs" />
+    <Compile Include="Interfaces\Eos\EosDirectSerialEditor.xaml.cs">
+      <DependentUpon>EosDirectSerialEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Eos\EosInput.cs" />
+    <Compile Include="Interfaces\Eos\EosInputCollection.cs" />
+    <Compile Include="Interfaces\Eos\EosLedOutput.cs" />
+    <Compile Include="Interfaces\Eos\EosOutput.cs" />
+    <Compile Include="Interfaces\Eos\EosOutputCollection.cs" />
+    <Compile Include="Interfaces\Eos\EosServo.cs" />
+    <Compile Include="Interfaces\Eos\EosStepper.cs" />
+    <Compile Include="Interfaces\Eos\EosTextOutput.cs" />
+    <Compile Include="Interfaces\Keyboard\KeyboardInterface.cs" />
+    <Compile Include="Interfaces\Keyboard\KeyboardInterfaceEditor.xaml.cs">
+      <DependentUpon>KeyboardInterfaceEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Profile\ProfileInterface.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UnitConverters\AreaConverter.cs" />
+    <Compile Include="UnitConverters\DistanceConverter.cs" />
+    <Compile Include="UnitConverters\MassConverter.cs" />
+    <Compile Include="UnitConverters\MassFlowConverter.cs" />
+    <Compile Include="UnitConverters\PressureConverter.cs" />
+    <Compile Include="UnitConverters\RadianToDegreesConverter.cs" />
+    <Compile Include="UnitConverters\SpeedConverter.cs" />
+    <Compile Include="UnitConverters\TimeConverter.cs" />
+    <Compile Include="Units\NozzlePositionPercentUnit.cs" />
+    <Compile Include="Units\NozzlePositionUnit.cs" />
+    <Compile Include="Util\DCS\InstallationLocation.cs" />
+    <Compile Include="Util\DCS\InstallationLocations.cs" />
+    <Compile Include="Windows\Controls\VersionCheckWindow.xaml.cs">
+      <DependentUpon>VersionCheckWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Util\KnownFolders.cs" />
+    <Compile Include="Util\Tokenizer.cs" />
+    <Compile Include="Windows\Controls\AnalogBar.cs" />
+    <Compile Include="Windows\Controls\AxisBar.cs" />
+    <Compile Include="Windows\Controls\ButtonIndicator.cs" />
+    <Compile Include="IProfileManager.cs" />
+    <Compile Include="ISettingsManager.cs" />
+    <Compile Include="ITemplateManager.cs" />
+    <Compile Include="IUndoItem.cs" />
+    <Compile Include="KeyboardEmulator.cs" />
+    <Compile Include="KeyboardThread.cs" />
+    <Compile Include="LogLevel.cs" />
+    <Compile Include="LogManager.cs" />
+    <Compile Include="ModuleManager.cs" />
+    <Compile Include="Monitor.cs" />
+    <Compile Include="MonitorCollection.cs" />
+    <Compile Include="MonitorRenderer.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NotificationObject.cs" />
+    <Compile Include="ProfileManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyChangedUndoItem.cs" />
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="TemplateManager.cs" />
+    <Compile Include="TextDecorations.cs" />
+    <Compile Include="TextFormat.cs" />
+    <Compile Include="TextHorizontalAlignment.cs" />
+    <Compile Include="TextVerticalAlignment.cs" />
+    <Compile Include="UDPInterface\BaseUDPInterface.cs" />
+    <Compile Include="UDPInterface\ExportDataElement.cs" />
+    <Compile Include="UDPInterface\NetworkFunction.cs" />
+    <Compile Include="UDPInterface\NetworkFunctionCollection.cs" />
+    <Compile Include="UndoManager.cs" />
+    <Compile Include="UndoManagerBatch.cs" />
+    <Compile Include="UniqueHeliosInterfaceFactory.cs" />
+    <Compile Include="Units\AreaUnit.cs" />
+    <Compile Include="Units\BooleanUnit.cs" />
+    <Compile Include="Units\CelsiusUnit.cs" />
+    <Compile Include="Units\DegreesUnit.cs" />
+    <Compile Include="Units\DistanceUnit.cs" />
+    <Compile Include="Units\FeetUnit.cs" />
+    <Compile Include="Units\HoursUnit.cs" />
+    <Compile Include="Units\InchofMercuryUnit.cs" />
+    <Compile Include="Units\InchUnit.cs" />
+    <Compile Include="Units\KilogramsUnit.cs" />
+    <Compile Include="Units\KilometersUnit.cs" />
+    <Compile Include="Units\Liters.cs" />
+    <Compile Include="Units\MassFlowUnit.cs" />
+    <Compile Include="Units\MassUnit.cs" />
+    <Compile Include="Units\MetersUnit.cs" />
+    <Compile Include="Units\MilesUnit.cs" />
+    <Compile Include="Units\MilimetersOfMercury.cs" />
+    <Compile Include="Units\MinuteUnit.cs" />
+    <Compile Include="Units\NauticalMilesUnit.cs" />
+    <Compile Include="Units\NoValueUnit.cs" />
+    <Compile Include="Units\NumericUnit.cs" />
+    <Compile Include="Units\PoundsUnit.cs" />
+    <Compile Include="Units\PressureUnit.cs" />
+    <Compile Include="Units\RadiansUnit.cs" />
+    <Compile Include="Units\RPMPercentUnit.cs" />
+    <Compile Include="Units\RPMUnit.cs" />
+    <Compile Include="Units\SecondsUnit.cs" />
+    <Compile Include="Units\SpeedUnit.cs" />
+    <Compile Include="Units\SquareCentimeterUnit.cs" />
+    <Compile Include="Units\SquareFootUnit.cs" />
+    <Compile Include="Units\SquareInchUnit.cs" />
+    <Compile Include="Units\TextUnit.cs" />
+    <Compile Include="Units\TimeUnit.cs" />
+    <Compile Include="Util\Hash.cs" />
+    <Compile Include="Util\Resources.cs" />
+    <Compile Include="Util\SharedMemory.cs" />
+    <Compile Include="VersionChecker.cs" />
+    <Compile Include="Windows\Controls\CalibrationEditorLong.xaml.cs">
+      <DependentUpon>CalibrationEditorLong.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\ColorPicker.cs" />
+    <Compile Include="Windows\Controls\ColorPickerDialog.xaml.cs">
+      <DependentUpon>ColorPickerDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\ColorPickerSupport.cs" />
+    <Compile Include="Windows\Controls\ColorWell.xaml.cs">
+      <DependentUpon>ColorWell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\DCS\InstallationLocationsControl.xaml.cs">
+      <DependentUpon>InstallationLocationsControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\DCS\InstallationLocationsGroup.xaml.cs">
+      <DependentUpon>InstallationLocationsGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Util\StatusCodes.cs" />
+    <Compile Include="Windows\Controls\DigitalInputIndicator.cs" />
+    <Compile Include="Windows\Controls\FontChooserDialog.xaml.cs">
+      <DependentUpon>FontChooserDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\FontFamilyListItem.cs" />
+    <Compile Include="Windows\Controls\HeliosEditorDocument.cs" />
+    <Compile Include="Windows\Controls\HeliosInterfaceEditor.cs" />
+    <Compile Include="Windows\Controls\HeliosPropertyEditor.cs" />
+    <Compile Include="Windows\Controls\HeliosPropertyEditorCollection.cs" />
+    <Compile Include="Windows\Controls\HeliosTextBox.cs" />
+    <Compile Include="Windows\Controls\HeliosVisualView.cs" />
+    <Compile Include="Windows\Controls\PointOfViewIndicator.cs" />
+    <Compile Include="Windows\Controls\POVDirection.cs" />
+    <Compile Include="Windows\Controls\StaticValueEditor.cs" />
+    <Compile Include="Windows\Controls\TextFormatButton.xaml.cs">
+      <DependentUpon>TextFormatButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\TextStaticEditor.xaml.cs">
+      <DependentUpon>TextStaticEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Controls\TypefaceListItem.cs" />
+    <Content Include="Templates\Base\Buttons\MFD Lit.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Buttons\MFD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Buttons\Push - Red.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Buttons\Push - White.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Buttons\Tactile Round - Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Buttons\Tactile Round.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Buttons\Tactile Square - Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Bottom Left.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Bottom Right.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Bottom.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Left.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Right.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Top Left.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Top Right.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Backplate Screw - Top.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Caution.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Decorations\Screw.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Encoders\Encoder - Knob 2.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Encoders\Encoder - Knob 3.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Encoders\Encoder - Knob 4.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Encoders\Encoder - Knob 5.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\0.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\1.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\2.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\3.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\4.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\5.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\6.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\7.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\8.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\9.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\A-A.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\A-G.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Arrow.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\CMDS Outline.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\COM 1.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\COM 2.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\DED Bezel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\ENTR.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\F-16 ICP Panel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\F-16 Panel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Gear Handle.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Gear Light Diagarm.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Horizontal Panel Guard.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\IFF.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\LIST.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Panel Screw.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\RCL.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\RWR Bezel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Seat Arming Switch.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Spider Canopy Switch.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Vertical Panel Guard.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\WX.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\Yaw Trim Scale.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Hats\DCS Switch.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Indicators\Anunciator.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Indicators\Green Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Indicators\Indicator - Square.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Panels\Empty Panel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Panels\Generic Backplate.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Panels\Generic Screws.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Push Button Indicators\Push Indicator - Square.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Arrows - Dark.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Arrows - Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Blank - Dark.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Blank - Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Dark Wheel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Plus Minus - Dark - Horizontal.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Plus Minus - Dark.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Plus Minus - Light - Horizontal.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Plus Minus - Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Triangles - Dark.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\Triangles - Light.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rockers\White Wheel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rotaries\Rotary - Knob 1.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rotaries\Rotary - Knob 3.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rotaries\Rotary - Knob 4.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Rotaries\Rotary - Knob 5.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_BFI.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_LEFT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_RIGHT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A29B_UFCP.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\A4E_RADAR.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\ABRIS.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\CENTER_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\EHSI.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_DDD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_ECMD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_HSD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_TID.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_UHF_ARC159.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_VDI.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\F14_VHF_ARC182.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_CENTER_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_CLOCK_WIN1.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_CLOCK_WIN2.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_LEFT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_RADIO.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_RIGHT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_UFCP_1.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_UFCP_2.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_UFCP_3.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\JF17_UFCP_4.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\LEFT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\RIGHT_MFCD.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\RP22.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Simulator Viewports\Shkval.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Flat Top - Locking.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Flat Top.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Orange Seal - Round.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Orange Seal.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Round - Locking.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Round.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Threeway Toggles\Square - Tan.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Flat Top - Locking.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Flat Top.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Orange Seal - Round.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Orange Seal.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Round - Locking.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Round.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\Toggles\Square - Tan.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\Base\F-16\RWR Bezel.htpl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Docs\Licenses\VCRedist\VS_2017_ENT_PRO_TRIAL_RTW_ENU_Eula.1033.rtf" />
+    <Resource Include="Images\Toggles\guard-up-empty.png" />
+    <Resource Include="Images\Buttons\green-push-in.png">
+    </Resource>
+    <Resource Include="Interfaces\DCS\Common\HeliosExport16.lua" />
+    <None Include="Docs\Helios Release 1.4 Users Guide.docx" />
+    <Content Include="Docs\Helios Release 1.4 Users Guide.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Interfaces\DCS\FC3\ExportFunctions.lua" />
+    <Resource Include="Interfaces\DCS\Generic\ExportFunctions.lua" />
+    <Resource Include="Images\General\HeliosIcon.png" />
+    <Resource Include="Interfaces\DCS\F14B\ExportFunctions.lua" />
+    <Resource Include="Interfaces\DCS\A10C\ExportFunctionsA10C1.lua" />
+    <Resource Include="Interfaces\DCS\Common\Export.lua" />
+    <None Include="Interfaces\FunctionsClassDiagram.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Windows\Controls\About.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CustomGaugeAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CustomGaugeBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CustomDrumAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CustomTapeAppearanceEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Controls\ImageTranslucentAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GuardedThreeWayAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GuardedThreeWayBehaviorPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GuardedToggleSwitchAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GuardedToggleSwitchBehaviorPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GuardedSwitchAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\GuardedSwitchBehaviorPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\HatSwitchAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\HeliosPanelAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ImageDecorationAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\IndicatorAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\ViewportExtentBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextDisplayAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\IndicatorPushButtonAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\KneeBoardAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\KneeBoardBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\KneeboardSwitchAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\KneeboardSwitchBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\LineDecorationAppearancePropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PotentiometerAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PotentiometerBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PushButtonAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PushButtonBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RectangleDecorationAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RectangleFillAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RotaryEncoderAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RotaryEncoderBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RotarySwitchAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\LinearPotentiometerDetentBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Special\ScreenReplicatorBehaviorPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TextDecorationAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ThreeWayToggleSwitchAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ThreeWayToggleSwitchBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ToggleSwitchAppearanceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ToggleSwitchBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Gauges\A-10\ADI\adi_backup_ball.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_backup_inner_ring.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_backup_outer_ring.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_backup_warning_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_backup_wings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_ball.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_bank_pointer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_bank_steering_bar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_course_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_gs_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_gs_indicator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_guides.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_inner_ring.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_off_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_outer_ring.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_pitch_steering_bar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ADI\adi_slip_ball.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Altimeter\altimeter_backplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Altimeter\altimeter_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Altimeter\altimeter_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Altimeter\alt_drum_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Common\drum_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Common\drum_tape_reverse.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Common\eng_inner_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Common\eng_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Common\eng_small_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\AOA\aoa_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ApuEGT\apu_egt_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ApuRPM\apu_rpm_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\CabinPressure\cabin_pressure_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\CabinPressure\cabin_pressure_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\EngineRPM\eng_rpm_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\FanRPM\eng_fan_rpm_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Flaps\flaps_cover.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Flaps\flaps_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\FuelFlow\eng_fuel_flow_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\FuelGauge\fuel_gauge_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\FuelGauge\fuel_gauge_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HARS\hars_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HARS\hars_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\EngineTemp\eng_temp_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Common\needle_a.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Gauges\A-10\HSI\HSIBehaviorEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Resource Include="Gauges\A-10\HSI\hsi_bearing_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_bearing_needle_1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_bearing_needle_2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_compass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_course_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_deviation_card.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_deviation_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_from_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_heading_bug.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_off_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_range_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\HSI\hsi_to_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Hydraulic\hydraulic_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\Hydraulic\hydraulic_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\IAS\ias_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\IAS\ias_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\ILSFrequency\ils_frequency_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\LiquidOxygen\liquid_oxygen_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\LiquidOxygen\liquid_oxygen_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\OilPressure\eng_oil_pressure_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\OxygenPressure\oxygen_pressure_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\OxygenPressure\oxygen_pressure_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\TACANChannel\tacan_channel_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\TACANChannel\tacan_channel_hundreds_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\TACANChannel\tacan_channel_x_mode.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\TACANChannel\tacan_channel_y_mode.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\A-10\VVI\vvi_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_aux_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_ball.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_gs_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_guides.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_ils_bar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_ils_scale_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_inner_ring.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_loc_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_off_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_outer_ring.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\ADI\adi_slip_ball.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Airspeed\asi_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Airspeed\asi_inner_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Airspeed\asi_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Common\drum_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Altimeter\altimeter_backplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Altimeter\altimeter_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Altimeter\altimeter_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Altimeter\alt_drum_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\AOA\aoa_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\AOA\aoa_off_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\AOA\aoa_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\FTIT\ftit_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\FTIT\ftit_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\FuelFlow\fuelflow_labels.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_background.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_bearing_needle_f16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_compass.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_course_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_course_needle_f16.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_deviation_card.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_deviation_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_dme_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_from_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_heading_bug.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_off_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HSI\hsi_to_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Nozzle\nozzle_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Nozzle\nozzle_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\OilPressure\oil_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\OilPressure\oil_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\RPM\rpm_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\RPM\rpm_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Trim\pitchtrim_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Trim\pitchtrim_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Trim\rolltrim_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\Trim\rolltrim_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\VVI\vvi_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\VVI\vvi_off_flag.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\VVI\vvi_tape.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HydraulicPressure\hydraulic_faceplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Resource Include="Gauges\F-16\HydraulicPressure\hydraulic_needle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Interfaces\DCS\Common\DCSInterfaceEditor.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Interfaces\DirectX\DirectXControllerInterfaceEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\Eos\EosDirectSerialEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Interfaces\Keyboard\KeyboardInterfaceEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\InterfaceStatusItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\StructuredInfoControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\StructuredInfoListControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\VersionCheckWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\CalibrationEditorLong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\ColorPickerDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\ColorWell.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\DCS\InstallationLocationsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\DCS\InstallationLocationsGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\FilePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\DefaultDialogWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\FontChooserDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\ImagePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\ShareDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Controls\TextFormatButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Controls\TextStaticEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\DCS\F14B\Functions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\mfd-in.png" />
+    <Resource Include="Images\Buttons\mfd-lit-in.png" />
+    <Resource Include="Images\Buttons\mfd-lit.png" />
+    <Resource Include="Images\Buttons\mfd.png" />
+    <Resource Include="Images\Buttons\red-push-in.png" />
+    <Resource Include="Images\Buttons\red-push.png" />
+    <Resource Include="Images\Buttons\tactile-dark-round-in.png" />
+    <Resource Include="Images\Buttons\tactile-dark-round.png" />
+    <Resource Include="Images\Buttons\tactile-dark-square-in.png" />
+    <Resource Include="Images\Buttons\tactile-dark-square.png" />
+    <Resource Include="Images\Buttons\tactile-light-round-in.png" />
+    <Resource Include="Images\Buttons\tactile-light-round.png" />
+    <Resource Include="Images\Buttons\tactile-light-square-in.png" />
+    <Resource Include="Images\Buttons\tactile-light-square.png" />
+    <Resource Include="Images\Buttons\white-push-in.png" />
+    <Resource Include="Images\Buttons\white-push.png" />
+    <Resource Include="Images\Hats\dcs-center.png" />
+    <Resource Include="Images\Hats\dcs-down.png" />
+    <Resource Include="Images\Hats\dcs-left.png" />
+    <Resource Include="Images\Hats\dcs-right.png" />
+    <Resource Include="Images\Hats\dcs-up.png" />
+    <Resource Include="Images\Hats\hat-center.png" />
+    <Resource Include="Images\Hats\hat-down.png" />
+    <Resource Include="Images\Hats\hat-left.png" />
+    <Resource Include="Images\Hats\hat-right.png" />
+    <Resource Include="Images\Hats\hat-up.png" />
+    <Resource Include="Images\Indicators\anunciator.png" />
+    <Resource Include="Images\Indicators\caution-indicator-off-pushed.png" />
+    <Resource Include="Images\Indicators\caution-indicator-off.png" />
+    <Resource Include="Images\Indicators\caution-indicator-on-pushed.png" />
+    <Resource Include="Images\Indicators\caution-indicator-on.png" />
+    <Resource Include="Images\Indicators\green-light-off.png" />
+    <Resource Include="Images\Indicators\green-light-on.png" />
+    <Resource Include="Images\Indicators\indicator-push.png" />
+    <Resource Include="Images\Indicators\indicator.png" />
+    <Resource Include="Images\Knobs\knob1.png" />
+    <Resource Include="Images\Knobs\knob2.png" />
+    <Resource Include="Images\Knobs\knob3.png" />
+    <Resource Include="Images\Knobs\knob4.png" />
+    <Resource Include="Images\Knobs\knob5.png" />
+    <Resource Include="Images\Panels\panel-backplate-bottom-left.png" />
+    <Resource Include="Images\Panels\panel-backplate-bottom-right.png" />
+    <Resource Include="Images\Panels\panel-backplate-bottom.png" />
+    <Resource Include="Images\Panels\panel-backplate-left.png" />
+    <Resource Include="Images\Panels\panel-backplate-right.png" />
+    <Resource Include="Images\Panels\panel-backplate-top-left.png" />
+    <Resource Include="Images\Panels\panel-backplate-top-right.png" />
+    <Resource Include="Images\Panels\panel-backplate-top.png" />
+    <Resource Include="Images\Panels\panel-bottom-left.png" />
+    <Resource Include="Images\Panels\panel-bottom-right.png" />
+    <Resource Include="Images\Panels\panel-bottom.png" />
+    <Resource Include="Images\Panels\panel-left.png" />
+    <Resource Include="Images\Panels\panel-right.png" />
+    <Resource Include="Images\Panels\panel-screw.png" />
+    <Resource Include="Images\Panels\panel-screws-bottom-left.png" />
+    <Resource Include="Images\Panels\panel-screws-bottom-right.png" />
+    <Resource Include="Images\Panels\panel-screws-top-left.png" />
+    <Resource Include="Images\Panels\panel-screws-top-right.png" />
+    <Resource Include="Images\Panels\panel-top-left.png" />
+    <Resource Include="Images\Panels\panel-top-right.png" />
+    <Resource Include="Images\Panels\panel-top.png" />
+    <Resource Include="Images\Panels\yellow-caution.png" />
+    <Resource Include="Images\Rockers\arrows-dark-down.png" />
+    <Resource Include="Images\Rockers\arrows-dark-horiz-left.png" />
+    <Resource Include="Images\Rockers\arrows-dark-horiz-norm.png" />
+    <Resource Include="Images\Rockers\arrows-dark-horiz-right.png" />
+    <Resource Include="Images\Rockers\arrows-dark-norm.png" />
+    <Resource Include="Images\Rockers\arrows-dark-up.png" />
+    <Resource Include="Images\Rockers\arrows-light-down.png" />
+    <Resource Include="Images\Rockers\arrows-light-horiz-left.png" />
+    <Resource Include="Images\Rockers\arrows-light-horiz-norm.png" />
+    <Resource Include="Images\Rockers\arrows-light-horiz-right.png" />
+    <Resource Include="Images\Rockers\arrows-light-norm.png" />
+    <Resource Include="Images\Rockers\arrows-light-up.png" />
+    <Resource Include="Images\Rockers\blank-dark-down.png" />
+    <Resource Include="Images\Rockers\blank-dark-horiz-left.png" />
+    <Resource Include="Images\Rockers\blank-dark-horiz-norm.png" />
+    <Resource Include="Images\Rockers\blank-dark-horiz-right.png" />
+    <Resource Include="Images\Rockers\blank-dark-norm.png" />
+    <Resource Include="Images\Rockers\blank-dark-up.png" />
+    <Resource Include="Images\Rockers\blank-light-down.png" />
+    <Resource Include="Images\Rockers\blank-light-horiz-left.png" />
+    <Resource Include="Images\Rockers\blank-light-horiz-norm.png" />
+    <Resource Include="Images\Rockers\blank-light-horiz-right.png" />
+    <Resource Include="Images\Rockers\blank-light-norm.png" />
+    <Resource Include="Images\Rockers\blank-light-up.png" />
+    <Resource Include="Images\Rockers\mfd-down.png" />
+    <Resource Include="Images\Rockers\mfd-norm.png" />
+    <Resource Include="Images\Rockers\mfd-up.png" />
+    <Resource Include="Images\Rockers\plusminus-dark-down.png" />
+    <Resource Include="Images\Rockers\plusminus-dark-horiz-left.png" />
+    <Resource Include="Images\Rockers\plusminus-dark-horiz-norm.png" />
+    <Resource Include="Images\Rockers\plusminus-dark-horiz-right.png" />
+    <Resource Include="Images\Rockers\plusminus-dark-norm.png" />
+    <Resource Include="Images\Rockers\plusminus-dark-up.png" />
+    <Resource Include="Images\Rockers\plusminus-light-down.png" />
+    <Resource Include="Images\Rockers\plusminus-light-horiz-left.png" />
+    <Resource Include="Images\Rockers\plusminus-light-horiz-norm.png" />
+    <Resource Include="Images\Rockers\plusminus-light-horiz-right.png" />
+    <Resource Include="Images\Rockers\plusminus-light-norm.png" />
+    <Resource Include="Images\Rockers\plusminus-light-up.png" />
+    <Resource Include="Images\Rockers\traingles-light-norm.png" />
+    <Resource Include="Images\Rockers\triangles-dark-down.png" />
+    <Resource Include="Images\Rockers\triangles-dark-horiz-left.png" />
+    <Resource Include="Images\Rockers\triangles-dark-horiz-norm.png" />
+    <Resource Include="Images\Rockers\triangles-dark-horiz-right.png" />
+    <Resource Include="Images\Rockers\triangles-dark-norm.png" />
+    <Resource Include="Images\Rockers\triangles-dark-up.png" />
+    <Resource Include="Images\Rockers\triangles-light-down.png" />
+    <Resource Include="Images\Rockers\triangles-light-horiz-left.png" />
+    <Resource Include="Images\Rockers\triangles-light-horiz-norm.png" />
+    <Resource Include="Images\Rockers\triangles-light-horiz-right.png" />
+    <Resource Include="Images\Rockers\triangles-light-norm.png" />
+    <Resource Include="Images\Rockers\triangles-light-up.png" />
+    <Resource Include="Images\Rockers\trim-down.png" />
+    <Resource Include="Images\Rockers\trim-horiz-left.png" />
+    <Resource Include="Images\Rockers\trim-horiz-norm.png" />
+    <Resource Include="Images\Rockers\trim-horiz-right.png" />
+    <Resource Include="Images\Rockers\trim-norm.png" />
+    <Resource Include="Images\Rockers\trim-up.png" />
+    <Resource Include="Images\Rockers\wheel-white-down.png" />
+    <Resource Include="Images\Rockers\wheel-white-horiz-left.png" />
+    <Resource Include="Images\Rockers\wheel-white-horiz-norm.png" />
+    <Resource Include="Images\Rockers\wheel-white-horiz-right.png" />
+    <Resource Include="Images\Rockers\wheel-white-norm.png" />
+    <Resource Include="Images\Rockers\wheel-white-up.png" />
+    <Resource Include="Images\Toggles\flattop-down.png" />
+    <Resource Include="Images\Toggles\flattop-horiz-left.png" />
+    <Resource Include="Images\Toggles\flattop-horiz-norm.png" />
+    <Resource Include="Images\Toggles\flattop-horiz-right.png" />
+    <Resource Include="Images\Toggles\flattop-locking-down.png" />
+    <Resource Include="Images\Toggles\flattop-locking-horiz-left.png" />
+    <Resource Include="Images\Toggles\flattop-locking-horiz-norm.png" />
+    <Resource Include="Images\Toggles\flattop-locking-horiz-right.png" />
+    <Resource Include="Images\Toggles\flattop-locking-norm.png" />
+    <Resource Include="Images\Toggles\flattop-locking-up.png" />
+    <Resource Include="Images\Toggles\flattop-norm.png" />
+    <Resource Include="Images\Toggles\flattop-up.png" />
+    <Resource Include="Images\Toggles\guard-down-norm.png" />
+    <Resource Include="Images\Toggles\guard-down-off.png" />
+    <Resource Include="Images\Toggles\guard-down-on.png" />
+    <Resource Include="Images\Toggles\guard-up-norm.png" />
+    <Resource Include="Images\Toggles\guard-up-off.png" />
+    <Resource Include="Images\Toggles\guard-up-on.png" />
+    <Resource Include="Images\Toggles\orange-down.png" />
+    <Resource Include="Images\Toggles\orange-horiz-left.png" />
+    <Resource Include="Images\Toggles\orange-horiz-norm.png" />
+    <Resource Include="Images\Toggles\orange-horiz-right.png" />
+    <Resource Include="Images\Toggles\orange-norm.png" />
+    <Resource Include="Images\Toggles\orange-round-down.png" />
+    <Resource Include="Images\Toggles\orange-round-horiz-left.png" />
+    <Resource Include="Images\Toggles\orange-round-horiz-norm.png" />
+    <Resource Include="Images\Toggles\orange-round-horiz-right.png" />
+    <Resource Include="Images\Toggles\orange-round-norm.png" />
+    <Resource Include="Images\Toggles\orange-round-up.png" />
+    <Resource Include="Images\Toggles\orange-up.png" />
+    <Resource Include="Images\Toggles\round-down.png" />
+    <Resource Include="Images\Toggles\round-horiz-left.png" />
+    <Resource Include="Images\Toggles\round-horiz-norm.png" />
+    <Resource Include="Images\Toggles\round-horiz-right.png" />
+    <Resource Include="Images\Toggles\round-locking-down.png" />
+    <Resource Include="Images\Toggles\round-locking-horiz-left.png" />
+    <Resource Include="Images\Toggles\round-locking-horiz-norm.png" />
+    <Resource Include="Images\Toggles\round-locking-horiz-right.png" />
+    <Resource Include="Images\Toggles\round-locking-norm.png" />
+    <Resource Include="Images\Toggles\round-locking-up.png" />
+    <Resource Include="Images\Toggles\round-norm.png" />
+    <Resource Include="Images\Toggles\round-up.png" />
+    <Resource Include="Images\Toggles\square-tan-down.png" />
+    <Resource Include="Images\Toggles\square-tan-horiz-left.png" />
+    <Resource Include="Images\Toggles\square-tan-horiz-norm.png" />
+    <Resource Include="Images\Toggles\square-tan-horiz-right.png" />
+    <Resource Include="Images\Toggles\square-tan-norm.png" />
+    <Resource Include="Images\Toggles\square-tan-up.png" />
+    <Resource Include="Images\Toggles\toggle-down.png" />
+    <Resource Include="Images\Toggles\toggle-horiz-left.png" />
+    <Resource Include="Images\Toggles\toggle-horiz-norm.png" />
+    <Resource Include="Images\Toggles\toggle-horiz-right.png" />
+    <Resource Include="Images\Toggles\toggle-norm.png" />
+    <Resource Include="Images\Toggles\toggle-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\General\missing_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\A-10\adj-down.png" />
+    <Resource Include="Images\A-10\adj-norm.png" />
+    <Resource Include="Images\A-10\adj-up.png" />
+    <Resource Include="Images\A-10\anchr-norm-off.png" />
+    <Resource Include="Images\A-10\anchr-norm-on.png" />
+    <Resource Include="Images\A-10\anchr-press-off.png" />
+    <Resource Include="Images\A-10\anchr-press-on.png" />
+    <Resource Include="Images\A-10\brt-down.png" />
+    <Resource Include="Images\A-10\brt-norm.png" />
+    <Resource Include="Images\A-10\brt-up.png" />
+    <Resource Include="Images\A-10\con-down.png" />
+    <Resource Include="Images\A-10\con-norm.png" />
+    <Resource Include="Images\A-10\con-up.png" />
+    <Resource Include="Images\A-10\dsp-down.png" />
+    <Resource Include="Images\A-10\dsp-norm.png" />
+    <Resource Include="Images\A-10\dsp-up.png" />
+    <Resource Include="Images\A-10\egi-norm-off.png" />
+    <Resource Include="Images\A-10\egi-norm-on.png" />
+    <Resource Include="Images\A-10\egi-press-off.png" />
+    <Resource Include="Images\A-10\egi-press-on.png" />
+    <Resource Include="Images\A-10\fire-apu-fire.png" />
+    <Resource Include="Images\A-10\fire-apu-norm.png" />
+    <Resource Include="Images\A-10\fire-apu-pull-fire.png" />
+    <Resource Include="Images\A-10\fire-apu-pull-norm.png" />
+    <Resource Include="Images\A-10\fire-left-fire.png" />
+    <Resource Include="Images\A-10\fire-left-norm.png" />
+    <Resource Include="Images\A-10\fire-left-pull-fire.png" />
+    <Resource Include="Images\A-10\fire-left-pull-norm.png" />
+    <Resource Include="Images\A-10\fire-right-fire.png" />
+    <Resource Include="Images\A-10\fire-right-norm.png" />
+    <Resource Include="Images\A-10\fire-right-pull-fire.png" />
+    <Resource Include="Images\A-10\fire-right-pull-norm.png" />
+    <Resource Include="Images\A-10\front_panel_background.png" />
+    <Resource Include="Images\A-10\gear-dn-off.png" />
+    <Resource Include="Images\A-10\gear-dn-red.png" />
+    <Resource Include="Images\A-10\gear-up-off.png" />
+    <Resource Include="Images\A-10\gear-up-red.png" />
+    <Resource Include="Images\A-10\hars-norm-off.png" />
+    <Resource Include="Images\A-10\hars-norm-on.png" />
+    <Resource Include="Images\A-10\hars-press-off.png" />
+    <Resource Include="Images\A-10\hars-press-on.png" />
+    <Resource Include="Images\A-10\homing-fm-off.png" />
+    <Resource Include="Images\A-10\homing-fm-on.png" />
+    <Resource Include="Images\A-10\homing-uhf-off.png" />
+    <Resource Include="Images\A-10\homing-uhf-on.png" />
+    <Resource Include="Images\A-10\ils-norm-off.png" />
+    <Resource Include="Images\A-10\ils-norm-on.png" />
+    <Resource Include="Images\A-10\ils-press-off.png" />
+    <Resource Include="Images\A-10\ils-press-on.png" />
+    <Resource Include="Images\A-10\mfd-bezel.png" />
+    <Resource Include="Images\A-10\mfd-in.png" />
+    <Resource Include="Images\A-10\mfd-knob.png" />
+    <Resource Include="Images\A-10\mfd-out.png" />
+    <Resource Include="Images\A-10\mfd-rocker-down.png" />
+    <Resource Include="Images\A-10\mfd-rocker-middle.png" />
+    <Resource Include="Images\A-10\mfd-rocker-up.png" />
+    <Resource Include="Images\A-10\mfd.png" />
+    <Resource Include="Images\A-10\strpt-norm-off.png" />
+    <Resource Include="Images\A-10\strpt-norm-on.png" />
+    <Resource Include="Images\A-10\strpt-press-off.png" />
+    <Resource Include="Images\A-10\strpt-press-on.png" />
+    <Resource Include="Images\A-10\sym-left.png" />
+    <Resource Include="Images\A-10\sym-norm.png" />
+    <Resource Include="Images\A-10\sym-right.png" />
+    <Resource Include="Images\A-10\tcn-norm-off.png" />
+    <Resource Include="Images\A-10\tcn-norm-on.png" />
+    <Resource Include="Images\A-10\tcn-press-off.png" />
+    <Resource Include="Images\A-10\tcn-press-on.png" />
+    <Resource Include="Images\A-10\tisl-norm-off.png" />
+    <Resource Include="Images\A-10\tisl-norm-on.png" />
+    <Resource Include="Images\A-10\tisl-press-off.png" />
+    <Resource Include="Images\A-10\tisl-press-on.png" />
+    <Resource Include="Images\A-10\ufc_0.png" />
+    <Resource Include="Images\A-10\ufc_0_in.png" />
+    <Resource Include="Images\A-10\ufc_1.png" />
+    <Resource Include="Images\A-10\ufc_1_in.png" />
+    <Resource Include="Images\A-10\ufc_2.png" />
+    <Resource Include="Images\A-10\ufc_2_in.png" />
+    <Resource Include="Images\A-10\ufc_3.png" />
+    <Resource Include="Images\A-10\ufc_3_in.png" />
+    <Resource Include="Images\A-10\ufc_4.png" />
+    <Resource Include="Images\A-10\ufc_4_in.png" />
+    <Resource Include="Images\A-10\ufc_5.png" />
+    <Resource Include="Images\A-10\ufc_5_in.png" />
+    <Resource Include="Images\A-10\ufc_6.png" />
+    <Resource Include="Images\A-10\ufc_6_in.png" />
+    <Resource Include="Images\A-10\ufc_7.png" />
+    <Resource Include="Images\A-10\ufc_7_in.png" />
+    <Resource Include="Images\A-10\ufc_8.png" />
+    <Resource Include="Images\A-10\ufc_8_in.png" />
+    <Resource Include="Images\A-10\ufc_9.png" />
+    <Resource Include="Images\A-10\ufc_9_in.png" />
+    <Resource Include="Images\A-10\ufc_aft.png" />
+    <Resource Include="Images\A-10\ufc_aft_in.png" />
+    <Resource Include="Images\A-10\ufc_alt_alrt.png" />
+    <Resource Include="Images\A-10\ufc_alt_alrt_in.png" />
+    <Resource Include="Images\A-10\ufc_blank.png" />
+    <Resource Include="Images\A-10\ufc_blank_in.png" />
+    <Resource Include="Images\A-10\ufc_clr.png" />
+    <Resource Include="Images\A-10\ufc_clr_in.png" />
+    <Resource Include="Images\A-10\ufc_data_rocker.png" />
+    <Resource Include="Images\A-10\ufc_data_rocker_down.png" />
+    <Resource Include="Images\A-10\ufc_data_rocker_up.png" />
+    <Resource Include="Images\A-10\ufc_ent.png" />
+    <Resource Include="Images\A-10\ufc_ent_in.png" />
+    <Resource Include="Images\A-10\ufc_func.png" />
+    <Resource Include="Images\A-10\ufc_func_in.png" />
+    <Resource Include="Images\A-10\ufc_fwd.png" />
+    <Resource Include="Images\A-10\ufc_fwd_in.png" />
+    <Resource Include="Images\A-10\ufc_hack.png" />
+    <Resource Include="Images\A-10\ufc_hack_in.png" />
+    <Resource Include="Images\A-10\ufc_hrocker_blank.png" />
+    <Resource Include="Images\A-10\ufc_hrocker_blank_left.png" />
+    <Resource Include="Images\A-10\ufc_hrocker_blank_right.png" />
+    <Resource Include="Images\A-10\ufc_ltr.png" />
+    <Resource Include="Images\A-10\ufc_ltr_in.png" />
+    <Resource Include="Images\A-10\ufc_mid.png" />
+    <Resource Include="Images\A-10\ufc_mid_in.png" />
+    <Resource Include="Images\A-10\ufc_mk.png" />
+    <Resource Include="Images\A-10\ufc_mk_in.png" />
+    <Resource Include="Images\A-10\ufc_sel_rocker.png" />
+    <Resource Include="Images\A-10\ufc_sel_rocker_down.png" />
+    <Resource Include="Images\A-10\ufc_sel_rocker_up.png" />
+    <Resource Include="Images\A-10\ufc_spc.png" />
+    <Resource Include="Images\A-10\ufc_spc_in.png" />
+    <Resource Include="Images\A-10\ufc_vrocker_blank.png" />
+    <Resource Include="Images\A-10\ufc_vrocker_blank_down.png" />
+    <Resource Include="Images\A-10\ufc_vrocker_blank_up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\A-10\ADI\adi_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\A-10\Common\engine_bezel.png" />
+    <Resource Include="Gauges\A-10\Common\gauge_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\A-10\HSI\hsi_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\F-16\a-a-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\a-a.png">
+    </Resource>
+    <Resource Include="Images\F-16\a-g-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\a-g.png">
+    </Resource>
+    <Resource Include="Images\F-16\arrow-image.png">
+    </Resource>
+    <Resource Include="Images\F-16\aux-comm-freq.png">
+    </Resource>
+    <Resource Include="Images\F-16\canopy-down.png">
+    </Resource>
+    <Resource Include="Images\F-16\canopy-up.png">
+    </Resource>
+    <Resource Include="Images\F-16\cmds_outline.png">
+    </Resource>
+    <Resource Include="Images\F-16\comm1-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\comm1.png">
+    </Resource>
+    <Resource Include="Images\F-16\comm2-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\comm2.png">
+    </Resource>
+    <Resource Include="Images\F-16\ded-box.png">
+    </Resource>
+    <Resource Include="Images\F-16\earming-off.png">
+    </Resource>
+    <Resource Include="Images\F-16\earming-on.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_background.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_border_left.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_border_right.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_bottom_border.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_bottom_left_croner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_bottom_right_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_horizontal_guard.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_screw.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_top_border.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_top_left_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_top_right_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_panel_vertical_guard.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_bottom_border.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_bottom_left_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_bottom_right_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_left_border.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_right_border.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_top_border.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_top_left_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\f16_small_panel_top_right_corner.png">
+    </Resource>
+    <Resource Include="Images\F-16\gear-down-red-on.png">
+    </Resource>
+    <Resource Include="Images\F-16\gear-down.png">
+    </Resource>
+    <Resource Include="Images\F-16\gear-light-graphic.png">
+    </Resource>
+    <Resource Include="Images\F-16\gear-up-red-on.png">
+    </Resource>
+    <Resource Include="Images\F-16\gear-up.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-0-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-0.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-1-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-1.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-2-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-2.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-3-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-3.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-4-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-4.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-5-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-5.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-6-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-6.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-7-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-7.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-8-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-8.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-9-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-9.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-enter-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-enter.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-wx-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp-wx.png">
+    </Resource>
+    <Resource Include="Images\F-16\icp_panel_background.png">
+    </Resource>
+    <Resource Include="Images\F-16\iff-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\iff.png">
+    </Resource>
+    <Resource Include="Images\F-16\ipc-rcl-press.png">
+    </Resource>
+    <Resource Include="Images\F-16\ipc-rcl.png">
+    </Resource>
+    <Resource Include="Images\F-16\list-pressed.png">
+    </Resource>
+    <Resource Include="Images\F-16\list.png">
+    </Resource>
+    <Resource Include="Images\F-16\mfd-in.png">
+    </Resource>
+    <Resource Include="Images\F-16\mfd-out.png">
+    </Resource>
+    <Resource Include="Images\F-16\mfd_bezel.png">
+    </Resource>
+    <Resource Include="Images\F-16\rocker-down.png">
+    </Resource>
+    <Resource Include="Images\F-16\rocker-middle.png">
+    </Resource>
+    <Resource Include="Images\F-16\rocker-up.png">
+    </Resource>
+    <Resource Include="Images\F-16\yaw_trim_scale.png">
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\F-16\ADI\adi_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\F-16\Common\f16_engine_bezel.png" />
+    <Resource Include="Gauges\F-16\Common\f16_gauge_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\F-16\AOA\aoa_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\F-16\FuelFlow\fuelflow_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\F-16\HSI\hsi_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Gauges\F-16\VVI\vvi_bezel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\KneeBoards\default_kneeboard_image.png" />
+    <Content Include="Helios.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\GNU Lesser General Public License.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Docs\Helios.Read.Me.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="..\Helios.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\KeraLua.1.0.29\build\net45\KeraLua.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\KeraLua.1.0.29\build\net45\KeraLua.targets'))" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>"$(DevEnvDir)TextTransform.exe" -out "$(ProjectDir)TimeStamp.g.cs" "$(ProjectDir)TimeStamp.tt"</PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="..\packages\KeraLua.1.0.29\build\net45\KeraLua.targets" Condition="Exists('..\packages\KeraLua.1.0.29\build\net45\KeraLua.targets')" />
+</Project>

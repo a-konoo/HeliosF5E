@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg5" Width="34" Height="34">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect1125" Fill="#FFFFFFFF" StrokeThickness="0.112467" Stroke="#FF000000" Data="m 5.597984 11.48179 h 5.800206 c 0.218278 0 0.394004 0.128046 0.394004 0.287099 v 0.334031 c 0 0.159052 -0.175726 0.287098 -0.394004 0.287098 H 5.597984 c -0.2182779 0 -1.6145266 -0.259672 -1.5662306 -0.48655 C 3.9910204 11.665777 5.3797061 11.48179 5.597984 11.48179 Z" HorizontalAlignment="Left" Canvas.Left="1" VerticalAlignment="Top" Canvas.Top="16.5" Height="1" Stretch="Fill" Width="16" RenderTransformOrigin="0.5,0.5">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="16" Width="4" Canvas.Top="15" Height="4" Name="path1898" Fill="#FF4D4D4D" StrokeThickness="0.176968" Stroke="#FF000000" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</Canvas>

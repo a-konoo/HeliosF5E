@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{3AF089A2-9DA0-40C3-AD3A-92253F497BC8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GadrocsWorkshop.Helios.ProfileEditor</RootNamespace>
+    <AssemblyName>Profile Editor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>222</ApplicationRevision>
+    <ApplicationVersion>1.4.2020.0222</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ProfileEditor.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GadrocsWorkshop.Helios.ProfileEditor.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AvalonDock, Version=4.60.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dirkster.AvalonDock.4.60.0\lib\net40\AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="AvalonDock.Themes.VS2013, Version=4.60.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dirkster.AvalonDock.Themes.VS2013.4.60.0\lib\net40\AvalonDock.Themes.VS2013.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLine, Version=2.9.1.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommandLineParser.2.9.1\lib\net461\CommandLine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAPICodePack, Version=1.1.4.0, Culture=neutral, PublicKeyToken=8985beaab7ea3f04, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft-WindowsAPICodePack-Core.1.1.4\lib\net472\Microsoft.WindowsAPICodePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.7.0\lib\net45\NLog.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddInterfaceDialog.xaml.cs">
+      <DependentUpon>AddInterfaceDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveInstall\ArchiveInstall.cs" />
+    <Compile Include="ArchiveInstall\Choice.cs" />
+    <Compile Include="ArchiveInstall\ChoiceControl.xaml.cs">
+      <DependentUpon>ChoiceControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ArchiveInstall\ChoiceModel.cs" />
+    <Compile Include="ArchiveInstall\Option.cs" />
+    <Compile Include="ArchiveInstall\OverwriteStrategy.cs" />
+    <Compile Include="ArchiveInstall\ProfileManifest16.cs" />
+    <Compile Include="ArchiveInstall\VersionRequired.cs" />
+    <Compile Include="ArchiveInstall\Welcome.xaml.cs">
+      <DependentUpon>Welcome.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BindingsDragDropAdvisor.cs" />
+    <Compile Include="BindingsPanel.xaml.cs">
+      <DependentUpon>BindingsPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalOptionsWindow.xaml.cs">
+      <DependentUpon>GlobalOptionsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InterfaceStatusView.xaml.cs">
+      <DependentUpon>InterfaceStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CircularProgressBar.xaml.cs">
+      <DependentUpon>CircularProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommandLineOptions.cs" />
+    <Compile Include="DragAndDropManager.cs" />
+    <Compile Include="DragSelectionAdorner.cs" />
+    <Compile Include="DropPreviewAdorner.cs" />
+    <Compile Include="EditorMouseState.cs" />
+    <Compile Include="GlassCockpitEditor.xaml.cs">
+      <DependentUpon>GlassCockpitEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HeliosVisualContainerEditor.cs" />
+    <Compile Include="IDragSourceAdvisor.cs" />
+    <Compile Include="IDropTargetAdvisor.cs" />
+    <Compile Include="LayersPanel.xaml.cs">
+      <DependentUpon>LayersPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingAdorner.cs" />
+    <Compile Include="MonitorAdorner.cs" />
+    <Compile Include="MonitorDocument.xaml.cs">
+      <DependentUpon>MonitorDocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="PanelDocument.xaml.cs">
+      <DependentUpon>PanelDocument.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewContent.xaml.cs">
+      <DependentUpon>PreviewContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEditorCommands.cs" />
+    <Compile Include="ProfileExplorerItemTemplateSelector.cs" />
+    <Compile Include="ProfileExplorerPanel.xaml.cs">
+      <DependentUpon>ProfileExplorerPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfilePreview.cs" />
+    <Compile Include="PropertyEditors\LayoutPropertyEditor.xaml.cs">
+      <DependentUpon>LayoutPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEditors\MonitorPropertyEditor.xaml.cs">
+      <DependentUpon>MonitorPropertyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyPanel.xaml.cs">
+      <DependentUpon>PropertyPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResetMonitors.xaml.cs">
+      <DependentUpon>ResetMonitors.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResetMonitorsScalingMode.cs" />
+    <Compile Include="ResetMonitorsWork.cs" />
+    <Compile Include="SaveTemplateDialog.xaml.cs">
+      <DependentUpon>SaveTemplateDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionAdorner.cs" />
+    <Compile Include="SnapAction.cs" />
+    <Compile Include="SnapManager.cs" />
+    <Compile Include="SnapTarget.cs" />
+    <Compile Include="TemplateManagerWindow.xaml.cs">
+      <DependentUpon>TemplateManagerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ToolboxDragAdvisor.cs" />
+    <Compile Include="ToolboxPanel.xaml.cs">
+      <DependentUpon>ToolboxPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UndoEvents\AddMonitorUndoEvent.cs" />
+    <Compile Include="UndoEvents\BindingAddUndoEvent.cs" />
+    <Compile Include="UndoEvents\BindingDeleteUndoEvent.cs" />
+    <Compile Include="UndoEvents\ControlAddUndoEvent.cs" />
+    <Compile Include="UndoEvents\ControlDeleteUndoEvent.cs" />
+    <Compile Include="UndoEvents\DeleteMonitorUndoEvent.cs" />
+    <Compile Include="UndoEvents\DisplayOrderUndoItem.cs" />
+    <Compile Include="UndoEvents\InterfaceAddUndoEvent.cs" />
+    <Compile Include="UndoEvents\InterfaceDeleteUndoEvent.cs" />
+    <Compile Include="ViewModel\AvailableInterfaces.cs" />
+    <Compile Include="ViewModel\DescriptorToolboxItem.cs" />
+    <Compile Include="GlobalOptions.cs" />
+    <Compile Include="ViewModel\MonitorResetItem.cs" />
+    <Compile Include="ViewModel\ProfileExplorerTreeItem.cs" />
+    <Compile Include="ViewModel\ProfileExplorerTreeItemCollection.cs" />
+    <Compile Include="ViewModel\ProfileExplorerTreeItemType.cs" />
+    <Compile Include="ViewModel\PropertyEditorGroup.cs" />
+    <Compile Include="ViewModel\PropertyEditorGroupCollection.cs" />
+    <Compile Include="ViewModel\TemplateManagerGroup.cs" />
+    <Compile Include="ViewModel\TemplateManagerGroupCollection.cs" />
+    <Compile Include="ViewModel\TemplateToolboxItem.cs" />
+    <Compile Include="ViewModel\ToolboxGroup.cs" />
+    <Compile Include="ViewModel\ToolboxGroupCollection.cs" />
+    <Compile Include="ViewModel\ToolboxItem.cs" />
+    <Compile Include="ViewModel\VisualsListItem.cs" />
+    <Compile Include="ViewModel\VisualsListItemCollections.cs" />
+    <Compile Include="VisualContainerDropAdvisor.cs" />
+    <Compile Include="VisualContainerEditorDocument.cs" />
+    <Page Include="AddInterfaceDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ArchiveInstall\ChoiceControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArchiveInstall\Welcome.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BindingsPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GlobalOptionsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InstallationDialogs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InterfaceStatusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CircularProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GlassCockpitEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="LayersPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MonitorDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PanelDocument.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PreviewContent.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProfileExplorerPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ProfileExplorerResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyEditors\LayoutPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyEditors\MonitorPropertyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PropertyPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ResetMonitors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SaveTemplateDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TemplateManagerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ToolboxPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ToolbarGraphics\AlignBottom.png" />
+    <Resource Include="ToolbarGraphics\AlignHCenter.png" />
+    <Resource Include="ToolbarGraphics\AlignLeft.png" />
+    <Resource Include="ToolbarGraphics\AlignRight.png" />
+    <Resource Include="ToolbarGraphics\AlignTop.png" />
+    <Resource Include="ToolbarGraphics\AlignVCenter.png" />
+    <Resource Include="ToolbarGraphics\BringForwardIcon.png" />
+    <Resource Include="ToolbarGraphics\DistributeHorizontal.png" />
+    <Resource Include="ToolbarGraphics\DistributeVertical.png" />
+    <Resource Include="ToolbarGraphics\HiddenIcon.png" />
+    <Resource Include="ToolbarGraphics\InterfacesIcon.png" />
+    <Resource Include="ToolbarGraphics\LockedIcon.png" />
+    <Resource Include="ToolbarGraphics\NoSnapIcon.png" />
+    <Resource Include="ToolbarGraphics\PreviewIcon.png" />
+    <Resource Include="ToolbarGraphics\PreviewStopIcon.png" />
+    <Resource Include="ToolbarGraphics\SendBackIcon.png" />
+    <Resource Include="ToolbarGraphics\SnapIcon.png" />
+    <Resource Include="ToolbarGraphics\SpaceHorizontal.png" />
+    <Resource Include="ToolbarGraphics\SpaceVertical.png" />
+    <Resource Include="ToolbarGraphics\UnLockedIcon.png" />
+    <Resource Include="ToolbarGraphics\VisibleIcon.png" />
+    <Resource Include="ToolbarGraphics\LockedPlusIcon.png" />
+    <Resource Include="ToolbarGraphics\UnLockedPlusIcon.png" />
+    <Resource Include="ToolbarGraphics\BringForwardFullyIcon.png" />
+    <Resource Include="ToolbarGraphics\SendBackFullyIcon.png" />
+    <Resource Include="ToolbarGraphics\BranchCollapseIcon.png" />
+    <Resource Include="ToolbarGraphics\BranchExpandIcon.png" />
+    <Resource Include="ToolbarGraphics\ItemCollapseIcon.png" />
+    <Resource Include="ToolbarGraphics\ItemExpandIcon.png" />
+    <Resource Include="ToolbarGraphics\ItemOpenIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ProfileEditor.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="about.png" />
+  </ItemGroup>
+  <Import Project="..\HeliosExecutable.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

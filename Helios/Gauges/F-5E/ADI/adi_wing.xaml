@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg5" Width="264" Height="138">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources>
+        <!--Unknown tag: inkscape:path-effect-->
+        <!--Unknown tag: inkscape:path-effect-->
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="33.729558" Canvas.Top="40.475469" Width="136.26741" Height="90.395215" Name="rect2541" Fill="#000000" x:Key="rect2541"/>
+    </Canvas.Resources>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path42769" Fill="#FFFFFFFF" StrokeThickness="0.6" Stroke="#FF000000" StrokeMiterLimit="4" Data="m 127.98196 69.81956 a 26.393283 32.586361 0 0 0 26.11343 27.899618 26.393283 32.586361 0 0 0 26.11615 -27.899618 h -2.67053 A 23.753954 29.327724 0 0 1 154.09539 94.462422 23.753954 29.327724 0 0 1 130.65248 69.81956 Z"/>
+        <Canvas Name="path1264">
+            <Canvas.RenderTransform>
+                <MatrixTransform Matrix="0.14079093 -0.00311652 0.00512099 0.23134414 5.6038296 -1.0126701"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Image xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="image839" Canvas.Left="20.393652" Canvas.Top="7.4919224" Source="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACBCAYAAAABiRIUAAAABHNCSVQICAgIfAhkiAAAAgVJREFU eJzt22FOq0AUBtBLa3xrmeXQhZbllL28VN4Pi0GElr7CQOs5yaSoMU7ql487BiMAAAAAAADgSRRr b+BVHMry6/pYVSvu5DECMaNuKFrPFg6BmNFAIL7e32NVNXl3838EYkZXAtF9nz+23BoCMbNeKPqB aF+bY1V9ZNvUHQRiZjdaorua+GyLTQVDIBYwoSXatYuIc0SctzJj7NbewC/Q9F77X9tHxPuhLPf5 tjROQyxkpCXa67F1joi/aw6dGiKPfjs0I+stIv4cynK138smauoVneo6Ukr9Tw8dQ/t2EbFPKTWn us4+V2iIdTS96+5qTx3vh7J8y70xDbGgGy3R/XisMfYppeJU19mOpgKxsImhuCZrKAQigzuaoq+9 texSSpEjFGaI9VybI4bWPsdMoSEyGWmJiJ9/o2j1AxMRUVyaYrHTh0BkdGcoxuaMRUMhEJldCUXE tGGziM9QNKe6nm9jFwKxgjtCMTZoLhYKgVjJqa4fDUZERDH3rUMgVnYjFBE3jqeXeWK2/QjEBkwI RcRwSxQR84ZCIDZiwi2kNRiMuQLheYiNGnqkf0T3Oc2Hf66G2Kg7GuPb9zxKQzyJqY3xaEsIxBO6 Fg6BICJe539LAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4Ff4B aw+xkKXN6pUAAAAASUVORK5CYII= " Width="34.924999" Height="34.131248" Stretch="Fill"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4276" Fill="#FFFFFFFF" StrokeThickness="0.6" Stroke="#FF000000" StrokeMiterLimit="4" Data="M 78.422892 69.81956 A 26.393283 32.586361 0 0 0 104.53633 97.719178 26.393283 32.586361 0 0 0 130.65248 69.81956 h -2.67052 A 23.753954 29.327724 0 0 1 104.53633 94.462422 23.753954 29.327724 0 0 1 81.093431 69.81956 Z"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="42.418011" Canvas.Top="67.059242" Width="46.288433" Height="3.5128038" Name="rect4866" Fill="#FFFFFFFF" StrokeThickness="0.6" Stroke="#FF000000" StrokeMiterLimit="4"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="170.99077" Canvas.Top="66.58139" Width="46.288433" Height="3.5128038" Name="rect48664" Fill="#FFFFFFFF" StrokeThickness="0.6" Stroke="#FF000000" StrokeMiterLimit="4"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="124" Width="11.2" Canvas.Top="64" Height="12.4" Name="path933" Fill="#FFFFFFFF" StrokeThickness="0.6" Stroke="#FF000000"/>
+    </Canvas>
+</Canvas>

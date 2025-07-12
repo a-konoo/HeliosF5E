@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg2109" Width="15" Height="9">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <Canvas Name="layer1">
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="4" Width="7" Height="7" Name="path1359b" Fill="#333333" StrokeThickness="0.264583" Stroke="#FFFF" RenderTransformOrigin="1.256,1.311" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Top="1"/>
+    </Canvas>
+</Canvas>

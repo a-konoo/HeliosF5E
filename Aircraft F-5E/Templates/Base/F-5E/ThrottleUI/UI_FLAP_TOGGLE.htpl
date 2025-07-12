@@ -1,0 +1,19 @@
+﻿<ControlTemplate>
+  <Name>UI_FlapToggle</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.ThreeWayDispToggle</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>121,100</Size>
+      <Hidden>False</Hidden>
+      <SwitchType>OnOnOn</SwitchType>
+      <Orientation>Vertical</Orientation>
+      <ClickType>Swipe</ClickType>
+      <PositionOneImage>{F-5E}/Images/ThrottleUI/F5E_FLAP_BOX/F5E_UI_FLAPTOGGLE01.png</PositionOneImage>
+      <PositionTwoImage>{F-5E}/Images/ThrottleUI/F5E_FLAP_BOX/F5E_UI_FLAPTOGGLE02.png</PositionTwoImage>
+      <PositionThreeImage>{F-5E}/Images/ThrottleUI/F5E_FLAP_BOX/F5E_UI_FLAPTOGGLE03.png</PositionThreeImage>
+      <DefaultPosition>Two</DefaultPosition>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

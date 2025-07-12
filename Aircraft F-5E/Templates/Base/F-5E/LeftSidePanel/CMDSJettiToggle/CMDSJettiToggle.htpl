@@ -1,0 +1,18 @@
+﻿<ControlTemplate>
+  <Name>CMDSJettiToggle</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.ToggleSwitch</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>179,288</Location>
+      <Size>50,100</Size>
+      <Hidden>False</Hidden>
+      <SwitchType>OnOn</SwitchType>
+      <Orientation>Vertical</Orientation>
+      <ClickType>Swipe</ClickType>
+      <PositionOneImage>{F-5E}/Images/LeftSidePanel/CMWSJettiToggle/CMWSJettiToggle_UP.png</PositionOneImage>
+      <PositionTwoImage>{F-5E}/Images/LeftSidePanel/CMWSJettiToggle/CMWSJettiToggle_DN.png</PositionTwoImage>
+      <DefaultPosition>Two</DefaultPosition>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

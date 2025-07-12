@@ -1,0 +1,19 @@
+﻿<ControlTemplate>
+  <Name>HandOffPanel(RWR)</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.StatePushPanel</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>102.5,101</Size>
+      <Hidden>False</Hidden>
+      <AnimationFrameImageNamePattern>{F-5E}/Images/RWRPanel/HANDOFF_01.png</AnimationFrameImageNamePattern>
+      <Type>Momentary</Type>
+      <Positions>
+        <Position Name="0" />
+        <Position Name="1" />
+        <Position Name="2" />
+      </Positions>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

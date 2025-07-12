@@ -1,0 +1,15 @@
+﻿<ControlTemplate>
+  <Name>RaderAcqButton</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.PushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>50,50</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/LeftSidePanel/F5E_ACQ_SOLID/F5E_ACQ_REL.png</Image>
+      <PushedImage>{F-5E}/Images/LeftSidePanel/F5E_ACQ_SOLID/F5E_ACQ_PUS.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

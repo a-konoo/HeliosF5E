@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg6322" Width="100" Height="20">
+    <Canvas.Resources/>
+    <Canvas Name="layer1">
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <!--g-->
+                    <TranslateTransform X="0.2002608" Y="-1010.0107"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="1010" Width="100" Height="20" Name="rect7120" Fill="#1A1A1A"/>
+
+            <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="50" Canvas.Top="1010" Width="50" Height="20" Name="rect7121" Fill="Yellow"/>
+            <Canvas Name="text6334" Opacity="1">
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path7202" Fill="#111111" Data="m 8.7607471,-3.480956 q 0,0.5167627 -0.1808669,1.0128549 -0.180867,0.4909245 -0.5167627,0.8268203 -0.4599188,0.4547511 -1.0283578,0.68729433 -0.5632713,0.23254321 -1.4055944,0.23254321 H 4.3941025 V 1.7848557 H 2.4097338 v -7.6945962 h 3.2659401 q 0.733803,0 1.2350628,0.1291906 0.5064274,0.1240231 0.8939994,0.3772368 0.4650864,0.30489 0.7079649,0.7803116 0.2480461,0.4754217 0.2480461,1.1420455 z m -2.0515478,0.046509 q 0,-0.3255605 -0.1756993,-0.5581037 Q 6.3578006,-4.2302618 6.1252574,-4.3232791 5.8151998,-4.4473022 5.5206451,-4.4576374 5.2260904,-4.4731403 4.7351658,-4.4731403 H 4.3941025 v 2.3047615 h 0.5684389 q 0.5064274,0 0.8319879,-0.062011 0.3307281,-0.062012 0.5529361,-0.2480461 0.1912022,-0.165364 0.2738842,-0.3927396 0.08785,-0.2325432 0.08785,-0.5632713 z" Height="13.085" Stretch="Fill" Canvas.Top="1014" Width="7.25" Canvas.Left="52" RenderTransformOrigin="0.5,0.5"/>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path7203" Fill="#111111" Data="m 17.163308,1.7848557 h -1.912021 l -3.265941,-5.2813145 v 5.2813145 h -1.819004 v -7.6945962 h 2.37194 l 2.806022,4.4079856 v -4.4079856 h 1.819004 z" Height="13.085" Stretch="Fill" Canvas.Top="1014" Width="7.167" Canvas.Left="61" RenderTransformOrigin="0.5,0.5"/>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path7204" Fill="#111111" Data="m 24.692542,1.7848557 h -5.565535 v -7.6945962 h 5.565535 v 1.4882765 h -3.591501 v 1.32808 h 3.333119 v 1.4882766 h -3.333119 v 1.90168661 h 3.591501 z" Height="13.085" Stretch="Fill" Canvas.Top="1014" Width="6" Canvas.Left="70" RenderTransformOrigin="0.5,0.5"/>
+                <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path7205" Fill="#111111" Data="m 33.095102,-1.0004951 q 0,1.42626498 -0.868161,2.1859061 -0.868161,0.7596412 -2.557975,0.7596412 -1.689814,0 -2.557976,-0.7596412 -0.862993,-0.75964112 -0.862993,-2.18073848 V -5.9097405 h 1.994704 v 4.8007252 q 0,0.80098218 0.335895,1.19372181 0.335896,0.39273964 1.09037,0.39273964 0.744138,0 1.085201,-0.37723676 0.346231,-0.37723675 0.346231,-1.20922469 v -4.8007252 h 1.994704 z" Height="13.085" Stretch="Fill" Canvas.Top="1014" Width="7" Canvas.Left="78" RenderTransformOrigin="0.5,0.5"/>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Canvas>

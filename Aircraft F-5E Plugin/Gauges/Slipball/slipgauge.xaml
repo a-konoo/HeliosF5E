@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg837" Width="53" Height="13">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources>
+        <LinearGradientBrush xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="linearGradient992" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="1,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF9F9F9" Offset="0"/>
+                    <GradientStop Color="#00F9F9F9" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+        <LinearGradientBrush xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Key="linearGradient994" MappingMode="Absolute" StartPoint="26,-2" EndPoint="38,50">
+            <LinearGradientBrush.GradientStops>
+                <GradientStopCollection>
+                    <GradientStop Color="#FFF9F9F9" Offset="0"/>
+                    <GradientStop Color="#00F9F9F9" Offset="1"/>
+                </GradientStopCollection>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+    </Canvas.Resources>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect942" Fill="{StaticResource linearGradient994}" StrokeThickness="0.2" Stroke="#FF000000" Data="M 8.5673082 9.6382217 H 50.689902 c 2.768668 0 4.997596 2.2289283 4.997596 4.9975963 v 0.713941 c 0 2.768668 -2.228928 4.997596 -4.997596 4.997596 H 8.5673082 c -2.7686683 0 -4.9975963 -2.228928 -4.9975963 -4.997596 v -0.713941 c 0 -2.768668 2.228928 -4.9975963 4.9975963 -4.9975963 z" HorizontalAlignment="Center" Canvas.Top="-8.5" VerticalAlignment="Center" Canvas.Left="-3"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect1128" Fill="#000000" StrokeThickness="0.2" Stroke="#FF000000" Data="m 25.319795 9.8167067 c 0.197762 0 0.356971 0.1592091 0.356971 0.3569713 v 9.995192 c 0 0.197762 -0.159209 0.356971 -0.356971 0.356971 -0.197762 0 -0.356971 -0.159209 -0.356971 -0.356971 v -9.995192 c 0 -0.1977622 0.159209 -0.3569713 0.356971 -0.3569713 z" HorizontalAlignment="Center" Canvas.Top="-8.5" VerticalAlignment="Center" Canvas.Left="-3"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect11285" Fill="#000000" StrokeThickness="0.2" Stroke="#FF000000" Data="m 34.065586 9.6382227 c 0.197762 0 0.356971 0.1592091 0.356971 0.3569712 v 9.9951921 c 0 0.197762 -0.159209 0.356971 -0.356971 0.356971 -0.197763 0 -0.356972 -0.159209 -0.356972 -0.356971 V 9.9951939 c 0 -0.1977621 0.159209 -0.3569712 0.356972 -0.3569712 z" HorizontalAlignment="Center" Canvas.Top="-8.5" VerticalAlignment="Center" Canvas.Left="-3"/>
+    </Canvas>
+</Canvas>

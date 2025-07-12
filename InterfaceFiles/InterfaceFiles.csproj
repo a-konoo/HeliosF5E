@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{6297B32B-F34F-4610-9711-E7326907BA39}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU32'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU32'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Empty.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Interfaces\*.hif.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Interfaces\*.hif.lua">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Interfaces\hif.schema.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Interfaces\.gitignore" />
+    <None Include="Interfaces\DCS.A-29B.hif.json" />
+    <None Include="Interfaces\DCS.A-29B.hif.lua" />
+    <None Include="Interfaces\DCS.A-4E-C.hif.json" />
+    <None Include="Interfaces\DCS.A-4E-C.hif.lua" />
+    <None Include="Interfaces\DCS.AH-6J.hif.json" />
+    <None Include="Interfaces\DCS.AH-6J.hif.lua" />
+    <None Include="Interfaces\DCS.AJS37.hif.json" />
+    <None Include="Interfaces\DCS.AJS37.hif.lua" />
+    <None Include="Interfaces\DCS.Alphajet.hif.json" />
+    <None Include="Interfaces\DCS.Alphajet.hif.lua" />
+    <None Include="Interfaces\DCS.Bf-109K-4.hif.json" />
+    <None Include="Interfaces\DCS.Bf-109K-4.hif.lua" />
+    <None Include="Interfaces\DCS.C-101CC.hif.json" />
+    <None Include="Interfaces\DCS.C-101CC.hif.lua" />
+    <None Include="Interfaces\DCS.ChristenEagleII.hif.json" />
+    <None Include="Interfaces\DCS.ChristenEagleII.hif.lua" />
+    <None Include="Interfaces\DCS.EA-18G.hif.json" />
+    <None Include="Interfaces\DCS.EA-18G.hif.lua" />
+    <None Include="Interfaces\DCS.Edge540.hif.json" />
+    <None Include="Interfaces\DCS.Edge540.hif.lua" />
+    <None Include="Interfaces\DCS.F-14B.hif.json" />
+    <None Include="Interfaces\DCS.F-14B.hif.lua" />
+    <None Include="Interfaces\DCS.F-16C_50.hif.json" />
+    <None Include="Interfaces\DCS.F-16C_50.hif.lua" />
+    <None Include="Interfaces\DCS.F-22A.hif.json" />
+    <None Include="Interfaces\DCS.F-22A.hif.lua" />
+    <None Include="Interfaces\DCS.F-5E-3.hif.json" />
+    <None Include="Interfaces\DCS.F-5E-3.hif.lua" />
+    <None Include="Interfaces\DCS.F-86FSabre.hif.json" />
+    <None Include="Interfaces\DCS.F-86FSabre.hif.lua" />
+    <None Include="Interfaces\DCS.FA-18E.hif.json" />
+    <None Include="Interfaces\DCS.FA-18E.hif.lua" />
+    <None Include="Interfaces\DCS.FA-18F.hif.json" />
+    <None Include="Interfaces\DCS.FA-18F.hif.lua" />
+    <None Include="Interfaces\DCS.FW-190A8.hif.json" />
+    <None Include="Interfaces\DCS.FW-190A8.hif.lua" />
+    <None Include="Interfaces\DCS.FW-190D9.hif.json" />
+    <None Include="Interfaces\DCS.FW-190D9.hif.lua" />
+    <None Include="Interfaces\DCS.Hercules.hif.json" />
+    <None Include="Interfaces\DCS.Hercules.hif.lua" />
+    <None Include="Interfaces\DCS.I-16.hif.json" />
+    <None Include="Interfaces\DCS.I-16.hif.lua" />
+    <None Include="Interfaces\DCS.JF-17.hif.json" />
+    <None Include="Interfaces\DCS.JF-17.hif.lua" />
+    <None Include="Interfaces\DCS.L-39ZA.hif.json" />
+    <None Include="Interfaces\DCS.L-39ZA.hif.lua" />
+    <None Include="Interfaces\DCS.M-2000C.hif.json" />
+    <None Include="Interfaces\DCS.M-2000C.hif.lua" />
+    <None Include="Interfaces\DCS.MB-339PAN.hif.json" />
+    <None Include="Interfaces\DCS.MB-339PAN.hif.lua" />
+    <None Include="Interfaces\DCS.MH-60R.hif.json" />
+    <None Include="Interfaces\DCS.MH-60R.hif.lua" />
+    <None Include="Interfaces\DCS.Mi-24P.hif.json" />
+    <None Include="Interfaces\DCS.Mi-24P.hif.lua" />
+    <None Include="Interfaces\DCS.Mi-8MT.hif.json" />
+    <None Include="Interfaces\DCS.Mi-8MT.hif.lua" />
+    <None Include="Interfaces\DCS.MiG-15bis.hif.json" />
+    <None Include="Interfaces\DCS.MiG-15bis.hif.lua" />
+    <None Include="Interfaces\DCS.MiG-19P.hif.json" />
+    <None Include="Interfaces\DCS.MiG-19P.hif.lua" />
+    <None Include="Interfaces\DCS.MiG-21Bis.hif.json" />
+    <None Include="Interfaces\DCS.MiG-21Bis.hif.lua" />
+    <None Include="Interfaces\DCS.NS430.hif.json" />
+    <None Include="Interfaces\DCS.NS430.hif.lua" />
+    <None Include="Interfaces\DCS.OV10Bronco.hif.json" />
+    <None Include="Interfaces\DCS.P-47D.hif.json" />
+    <None Include="Interfaces\DCS.P-47D.hif.lua" />
+    <None Include="Interfaces\DCS.P-51D.hif.json" />
+    <None Include="Interfaces\DCS.P-51D.hif.lua" />
+    <None Include="Interfaces\DCS.SA342M.hif.json" />
+    <None Include="Interfaces\DCS.SA342M.hif.lua" />
+    <None Include="Interfaces\DCS.SpitfireLFMkIX.hif.json" />
+    <None Include="Interfaces\DCS.SpitfireLFMkIX.hif.lua" />
+    <None Include="Interfaces\DCS.SuperCarrier.hif.json" />
+    <None Include="Interfaces\DCS.SuperCarrier.hif.lua" />
+    <None Include="Interfaces\DCS.UH-1H.hif.json" />
+    <None Include="Interfaces\DCS.UH-1H.hif.lua" />
+    <None Include="Interfaces\DCS.UH-60L.hif.json" />
+    <None Include="Interfaces\DCS.UH-60L.hif.lua" />
+    <None Include="Interfaces\DCS.VNAO_Room.hif.json" />
+    <None Include="Interfaces\DCS.VNAO_Room.hif.lua" />
+    <None Include="Interfaces\DCS.VNAO_T-45.hif.json" />
+    <None Include="Interfaces\DCS.VNAO_T-45.hif.lua" />
+    <None Include="Interfaces\DCS.VSN_F4B.hif.json" />
+    <None Include="Interfaces\DCS.VSN_F4B.hif.lua" />
+    <None Include="Interfaces\DCS.VSN_F4C.hif.json" />
+    <None Include="Interfaces\DCS.VSN_F4C.hif.lua" />
+    <None Include="Interfaces\DCS.Yak-52.hif.json" />
+    <None Include="Interfaces\DCS.Yak-52.hif.lua" />
+    <None Include="Interfaces\Helios.A10C.hif.json" />
+    <None Include="Interfaces\Helios.A10C2.hif.json" />
+    <None Include="Interfaces\Helios.A10C2.hif.lua" />
+    <None Include="Interfaces\Helios.AH64D.hif.json" />
+    <None Include="Interfaces\Helios.AH64D.hif.lua" />
+    <None Include="Interfaces\Helios.AV8B.hif.json" />
+    <None Include="Interfaces\Helios.AV8B.hif.lua" />
+    <None Include="Interfaces\Helios.F15ESE.hif.json" />
+    <None Include="Interfaces\Helios.F15ESE.hif.lua" />
+    <None Include="Interfaces\Helios.F16C.hif.json" />
+    <None Include="Interfaces\Helios.FA18C.hif.json" />
+    <None Include="Interfaces\Helios.FA18C.hif.lua" />
+    <None Include="Interfaces\Helios.KA50-3.hif.json" />
+    <None Include="Interfaces\Helios.KA50-3.hif.lua" />
+    <None Include="Interfaces\Helios.KA50.hif.json" />
+    <None Include="Interfaces\Helios.KA50.hif.lua" />
+    <None Include="Interfaces\Helios.M2000C.hif.json" />
+    <None Include="Interfaces\Helios.M2000C.hif.lua" />
+    <None Include="Interfaces\Helios.MIRAGEF1CE.hif.json" />
+    <None Include="Interfaces\Helios.MIRAGEF1EE.hif.json" />
+    <None Include="Interfaces\Helios.UH60L.hif.json" />
+    <None Include="Interfaces\Helios.UH60L.hif.lua" />
+    <None Include="Interfaces\HeliosInterfaces.code-workspace" />
+    <None Include="Interfaces\LICENSE" />
+    <None Include="Interfaces\README.md" />
+  </ItemGroup>
+  <Import Project="..\Helios.targets" />
+</Project>

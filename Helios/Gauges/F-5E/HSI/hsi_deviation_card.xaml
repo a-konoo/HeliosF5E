@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="svg2" Width="183" Height="183">
+    <Canvas x:Name="layer8">
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <!--g-->
+                    <TranslateTransform X="-32.53125" Y="-109"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path5061" Fill="#FF141414" Data="m 124 109 c -50.51999 0 -91.46875 40.98001 -91.46875 91.5 0 50.51999 40.94876 91.46875 91.46875 91.46875 50.51999 0 91.46875 -40.94876 91.46875 -91.46875 0 -50.51999 -40.94876 -91.5 -91.46875 -91.5 z m -32 47 0 10 -30 0 0 20 40 0 0 -20 -10 0 z m 66 14.96875 11.28125 19.5625 -22.5625 0 L 158 170.96875 z m -11.28125 41 22.5625 0 L 158 231.53125 146.71875 211.96875 z"/>
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="path5087" Fill="#FFF9F9F9" Data="m -34.5 5.5 c 0 1.6568542 -1.343146 3 -3 3 -1.656854 0 -3 -1.3431458 -3 -3 0 -1.6568542 1.343146 -3 3 -3 1.656854 0 3 1.3431458 3 3 z" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Center" Width="10" Height="10" Canvas.Left="-23.201" Canvas.Top="0.496">
+                <!--path-->
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.67" ScaleY="0.67"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="218.02154" Y="196.80327"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="path5087_Copy" Fill="#FFF9F9F9" Data="m -33.5 5.5 c 0 1.6568542 -1.343146 3 -3 3 -1.656854 0 -3 -1.3431458 -3 -3 0 -1.6568542 1.343146 -3 3 -3 1.656854 0 3 1.3431458 3 3 z" Stretch="Fill" Width="10" Height="10" Canvas.Left="-52.872" Canvas.Top="0.496" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <!--path-->
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.67" ScaleY="0.67"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="218.02154" Y="196.80327"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="path5087_Copy1" Fill="#FFF9F9F9" Data="m -33.5 5.5 c 0 1.6568542 -1.343146 3 -3 3 -1.656854 0 -3 -1.3431458 -3 -3 0 -1.6568542 1.343146 -3 3 -3 1.656854 0 3 1.3431458 3 3 z" Stretch="Fill" Width="10" Height="10" Canvas.Left="-139.872" Canvas.Top="0.496" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <!--path-->
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.67" ScaleY="0.67"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="218.02154" Y="196.80327"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="path5087_Copy2" Fill="#FFF9F9F9" Data="m -33.5 5.5 c 0 1.6568542 -1.343146 3 -3 3 -1.656854 0 -3 -1.3431458 -3 -3 0 -1.6568542 1.343146 -3 3 -3 1.656854 0 3 1.3431458 3 3 z" Stretch="Fill" Width="10" Height="10" Canvas.Left="-171.872" Canvas.Top="0.496" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <!--path-->
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.67" ScaleY="0.67"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="218.02154" Y="196.80327"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+        </Canvas>
+    </Canvas>
+</Canvas>

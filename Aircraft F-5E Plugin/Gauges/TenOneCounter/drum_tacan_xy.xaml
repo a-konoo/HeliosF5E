@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="svg5424" Width="10" Height="138">
+    <Canvas x:Name="layer1">
+        <Canvas>
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <!--g-->
+                    <TranslateTransform X="0" Y="-882.45203"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="0" Canvas.Top="882" Width="10" Height="139" x:Name="rect5504" Fill="#FF000000" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+    </Canvas>
+    <Canvas x:Name="layer2">
+        <Canvas x:Name="text5460" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-883.68922"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5464" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-882.48765"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5468" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-881.28611"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5472" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-880.08458"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5476" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-878.88298"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5480" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-877.63862"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5484" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-876.4799"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5488" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-875.27839"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+
+        <Canvas x:Name="text5492" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-874.0768"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5496" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-871.2517"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="text5500" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-872.8753"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+        <Canvas x:Name="g2995" Opacity="1">
+            <Canvas>
+                <Canvas.RenderTransform>
+                    <TransformGroup>
+                        <!--g-->
+                        <TranslateTransform X="0" Y="-1022.8753"/>
+                    </TransformGroup>
+                </Canvas.RenderTransform>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="7" Canvas.Top="18.336" StrokeThickness="0.264583" Stretch="Fill" x:Name="path42426" Canvas.Left="2" Height="11" Fill="#FFFFFF" Data="m 6.7595815 7.492205 q -0.07697 0.07697 -0.1924243 0.07697 -0.1539395 0 -0.2309092 -0.1462425 L 4.9815808 4.9060222 3.6269136 7.4229323 q -0.07697 0.1462425 -0.2309092 0.1462425 -0.277091 0 -0.277091 -0.2616971 0 -0.069273 0.038485 -0.1385455 L 4.6813989 4.3441432 3.1189134 1.3808087 q 0 -0.1077577 0.084667 -0.1847274 0.084667 -0.07697 0.1924243 -0.07697 0.1539395 0 0.2309092 0.1385455 L 4.9815808 3.7822642 6.336248 1.2576571 q 0.07697 -0.1385455 0.2309092 -0.1385455 0.277091 0 0.277091 0.2616971 0 0.069273 -0.038485 0.1308485 l -1.5240007 2.832486 1.5240007 2.824789 Q 6.905824 7.3536595 6.7595815 7.492205 Z" HorizontalAlignment="Center" VerticalAlignment="Center"
+ />
+    <Path x:Name="path42428" Fill="#FFFFFF" StrokeThickness="0.264583" Data="m 6.8057634 12.102692 -1.5547885 2.894061 v 2.886365 q 0 0.269394 -0.2693941 0.269394 -0.1000606 0 -0.1847273 -0.06158 -0.084667 -0.06158 -0.084667 -0.207819 v -2.886365 l -1.5932734 -3.02491 q 0 -0.115454 0.084667 -0.192424 0.084667 -0.07697 0.1924243 -0.07697 0.1539395 0 0.2309092 0.146243 l 1.3546672 2.51691 1.3546672 -2.51691 q 0.07697 -0.146243 0.2309092 -0.146243 0.277091 0 0.277091 0.261697 0 0.06927 -0.038485 0.138546 z" Canvas.Top="31.308" Height="10" Stretch="Fill" Width="7" Canvas.Left="2"/>
+
+</Canvas>

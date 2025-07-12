@@ -1,0 +1,15 @@
+﻿<ControlTemplate>
+  <Name>UI_Trigger(DeActive)</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.PushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>195,331</Location>
+      <Size>40,129</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/ThrottleUI/F5E_UI_TRG/F5E_TRIGGER_DEACTIVE.png</Image>
+      <PushedImage>{F-5E}/Images/ThrottleUI/F5E_UI_TRG/F5E_TRIGGER_DEACTIVE.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

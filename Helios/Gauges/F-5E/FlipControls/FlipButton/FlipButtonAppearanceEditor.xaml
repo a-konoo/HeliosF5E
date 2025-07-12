@@ -1,0 +1,37 @@
+<HeliosSdk:HeliosPropertyEditor x:Class="GadrocsWorkshop.Helios.Controls.FlipButtonAppearanceEditor"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            mc:Ignorable="d"
+            xmlns:Helios="clr-namespace:GadrocsWorkshop.Helios"
+            xmlns:HeliosTouch="clr-namespace:GadrocsWorkshop.Helios.Controls"
+            xmlns:HeliosSdk="clr-namespace:GadrocsWorkshop.Helios.Windows.Controls"    
+            DataContext="{Binding RelativeSource={RelativeSource Self}}"
+            Height="Auto" d:DesignWidth="300">
+    <HeliosSdk:HeliosPropertyEditor.Resources>
+        <Helios:EnumConverter Type="{x:Type HeliosTouch:FlipDisplayPatternType}" x:Key="FlipPatternType" />
+    </HeliosSdk:HeliosPropertyEditor.Resources>
+    <Grid Background="Transparent" Margin="4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" Margin="6,7,79,5" Style="{StaticResource Heading2}">FlipButton</TextBlock>
+        <Label Grid.Row="1" FontSize="10" HorizontalAlignment="Center" Content="firstImage" Height="38" VerticalAlignment="Top" Margin="0,8,0,0">
+            <Label.ToolTip>
+                <TextBlock Width="200" TextWrapping="Wrap" Text="This is the first image of the animation.  These images can be PNG saved with transparency.  All the images which form part of the animation image set need to be numbered sequentially (from 0) with the sequence number appearing immediately before the file extension.  There is a maximum of 800 images allowed in the animation image set.  All images should have identical width and height" />
+            </Label.ToolTip>
+        </Label>
+        <HeliosSdk:ImagePicker Grid.Column="1" Grid.Row="1" ImageFilename="{Binding Control.AnimationFrameImageNamePattern, Mode=TwoWay}" Grid.ColumnSpan="3"  Height="22"/>
+
+    </Grid>
+</HeliosSdk:HeliosPropertyEditor>

@@ -1,0 +1,21 @@
+﻿<ControlTemplate>
+  <Name>UI_Throttle_Line</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Panel</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>82,201</Location>
+      <Size>485,342</Size>
+      <Hidden>False</Hidden>
+      <Background>
+        <Image>{F-5E}/Images/ThrottleUI/F5E_UI_THR_LINE/UI_THR_LINE.png</Image>
+        <ImageAlignment>Stretched</ImageAlignment>
+      </Background>
+      <Interaction>
+        <AllowInteractionFull>True</AllowInteractionFull>
+        <AllowInteractionNone>False</AllowInteractionNone>
+        <AllowInteractionLegacy>False</AllowInteractionLegacy>
+      </Interaction>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

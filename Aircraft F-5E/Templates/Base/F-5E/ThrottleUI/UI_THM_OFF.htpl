@@ -1,0 +1,19 @@
+﻿<ControlTemplate>
+  <Name>UI_Thumb_Off</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.ThreeWayDispToggle</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>134,177</Location>
+      <Size>126,80</Size>
+      <Hidden>False</Hidden>
+      <SwitchType>OnOnOn</SwitchType>
+      <Orientation>Vertical</Orientation>
+      <ClickType>Swipe</ClickType>
+      <PositionOneImage>{F-5E}/Images/ThrottleUI/F5E_UI_THB/UI_THOFF_01.png</PositionOneImage>
+      <PositionTwoImage>{F-5E}/Images/ThrottleUI/F5E_UI_THB/UI_THOFF_02.png</PositionTwoImage>
+      <PositionThreeImage>{F-5E}/Images/ThrottleUI/F5E_UI_THB/UI_THOFF_03.png</PositionThreeImage>
+      <DefaultPosition>Two</DefaultPosition>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

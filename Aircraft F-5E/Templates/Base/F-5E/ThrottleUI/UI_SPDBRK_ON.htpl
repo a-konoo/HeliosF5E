@@ -1,0 +1,19 @@
+﻿<ControlTemplate>
+  <Name>UI_SPDBRK_On</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.ThreeWayDispToggle</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>134,177</Location>
+      <Size>121,32</Size>
+      <Hidden>False</Hidden>
+      <SwitchType>OnOnOn</SwitchType>
+      <Orientation>Vertical</Orientation>
+      <ClickType>Swipe</ClickType>
+      <PositionOneImage>{F-5E}/Images/ThrottleUI/F5E_UI_BRK/UI_SPEED_BRAKEON_01.png</PositionOneImage>
+      <PositionTwoImage>{F-5E}/Images/ThrottleUI/F5E_UI_BRK/UI_SPEED_BRAKEON_02.png</PositionTwoImage>
+      <PositionThreeImage>{F-5E}/Images/ThrottleUI/F5E_UI_BRK/UI_SPEED_BRAKEON_03.png</PositionThreeImage>
+      <DefaultPosition>Two</DefaultPosition>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

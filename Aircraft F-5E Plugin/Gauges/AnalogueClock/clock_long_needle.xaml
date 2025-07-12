@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg2109" Width="50" Height="154">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas Name="layer1">
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="21.128069" Canvas.Top="131.76791" Width="8.1939602" Height="10.712742" Name="rect1596" Fill="#FF000000" StrokeThickness="0.192076" Stroke="#FFFFFFFF"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="19.2" Canvas.Top="140.3" Width="12" Height="12" Name="path1359" Fill="#FF808080" StrokeThickness="0.264583" Stroke="#FFFFFFFF"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="rect926" Fill="#FFFFFFFF" StrokeThickness="0.4" Stroke="#111111" Data="m 18.517804 26.933243 6.729567 -15.109383 6.238731 15.228165 0.156173 89.640385 -2.074897 14.99308 H 20.92736 l -2.632664 -14.88824 z"/>
+    </Canvas>
+</Canvas>

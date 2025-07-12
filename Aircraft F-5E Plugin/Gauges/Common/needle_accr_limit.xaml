@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg2109" Width="48" Height="77">
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <Canvas.Resources/>
+    <Canvas Name="layer1">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path21923" Fill="#FFFFFFFF" StrokeThickness="0.292423" Stroke="#FF808080" Data="m 23.865944 1.3181479 c -0.103863 0.008 -8.672293 36.7271901 -8.72259 37.1239101 -0.04366 0.34435 -0.09622 16.48268 -0.02503 25.60534 5.969302 -0.009 12.102165 -0.009 18.014146 0.002 0.0059 -7.53567 -0.307704 -24.90065 -0.355889 -25.2501 -0.05357 -0.38848 -8.80677 -37.4891201 -8.910633 -37.4808801 z"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="14.993436" Canvas.Top="42.837189" Width="18.025745" Height="12.135723" Name="rect1691" Fill="#FF000000" StrokeThickness="0.265879" Stroke="#FFFFFFFF"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="9.7" Width="28" Canvas.Top="49" Height="28" Name="path1359a" Fill="#FF808080" StrokeThickness="0.264583" Stroke="#FF000000"/>
+        <Ellipse xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="18" Width="12" Canvas.Top="57" Height="12" Name="path1359b" Fill="#FF808080" StrokeThickness="0.264583" Stroke="#FF000000" RenderTransformOrigin="1.256,1.311"/>
+    </Canvas>
+    <Canvas Name="text3969">
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path882" Fill="#FF666666" StrokeThickness="0.264583" Data="M 9.5940203 10.709135 H 8.0003192 L 4.9121356 7.0380414 H 3.1820087 V 10.709135 H 1.9541767 V 1.4755903 h 2.5858886 q 0.8371582 0 1.3952637 0.1116211 0.5581054 0.1054199 1.0045898 0.3844726 0.5022949 0.3162598 0.7813477 0.7999512 0.2852539 0.4774902 0.2852539 1.2154296 0 0.9983887 -0.5022949 1.6743164 -0.502295 0.6697266 -1.3828614 1.010791 z M 6.7228778 4.0738812 q 0 -0.3968749 -0.1426269 -0.7007324 Q 6.4438251 3.0630902 6.1213641 2.8522504 5.8547138 2.6724164 5.4888446 2.6042035 5.1229755 2.5297895 4.6268817 2.5297895 H 3.1820087 V 6.014848 h 1.2402344 q 0.5829101 0 1.0169921 -0.099219 Q 5.8733173 5.8102093 6.1771747 5.5311566 6.4562274 5.2707074 6.586452 4.9358441 6.7228778 4.5947797 6.7228778 4.0738812 Z" Canvas.Left="19" Canvas.Top="30"/>
+    </Canvas>
+    <Canvas Name="text6847"/>
+</Canvas>

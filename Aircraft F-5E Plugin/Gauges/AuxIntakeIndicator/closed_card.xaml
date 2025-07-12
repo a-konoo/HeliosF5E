@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file is compatible with Silverlight-->
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="svg5" Width="98" Height="88">
+    <Canvas.Resources>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="458.0474" Canvas.Top="443.20639" Width="234.08313" Height="71.506663" x:Name="rect54477" Fill="#000000" x:Key="rect54477"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="70.157481" Canvas.Top="847.2865" Width="292.58899" Height="141.84371" x:Name="rect42364" Fill="#000000" x:Key="rect42364"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="59.14899" Canvas.Top="248.04415" Width="248.04415" Height="72.505214" x:Name="rect8071" Fill="#000000" x:Key="rect8071"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="59.148991" Canvas.Top="248.04414" Width="248.04414" Height="72.505211" x:Name="rect80718" Fill="#000000" x:Key="rect8071-8"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Left="59.148991" Canvas.Top="248.04414" Width="248.04414" Height="72.505211" x:Name="rect80714" Fill="#000000" x:Key="rect8071-4"/>
+    </Canvas.Resources>
+    <Canvas.RenderTransform>
+        <TranslateTransform X="0" Y="0"/>
+    </Canvas.RenderTransform>
+    <!--Unknown tag: sodipodi:namedview-->
+    <Canvas x:Name="layer1">
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Top="1" Width="98" Height="41" x:Name="rect9240" Fill="#FF000000" StrokeThickness="0.565196" Stroke="#FF1A1A1A" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="rect924" Fill="#FFFFFFFF" StrokeThickness="1.0136" Stroke="#FFFFFFFF" Data="M 4.6977146 6.5083055 1.2140196 8.5644463 V 19.38377 L 23.028456 6.5083055 Z m 27.6583464 0 L 1.2140196 24.889581 V 36.661753 L 52.300802 6.5083055 Z m 29.273037 0 L 10.541625 36.661753 H 28.520793 L 79.607576 6.5083055 Z m 27.306083 0 -51.086783 30.1534475 h 18.90047 L 93.738987 14.828826 V 6.5083055 Z M 93.738987 20.334246 66.076473 36.661753 h 19.646676 l 8.015838 -4.731455 z" HorizontalAlignment="Center" Stretch="Fill" VerticalAlignment="Top" Width="98" Canvas.Top="3.5"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Top="42" Width="98" Height="46" x:Name="rect92405" Fill="#FF000000" StrokeThickness="0.565196" Stroke="#FF1A1A1A" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Rectangle xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Canvas.Top="42" Width="94" Height="46" x:Name="rect92405a" Fill="#FF000000" StrokeThickness="0.565196" Stroke="#FF1A1A1A" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+
+    </Canvas>
+    <Canvas Name="text48863">
+        <Canvas.RenderTransform>
+            <ScaleTransform ScaleX="0.70092046" ScaleY="1.4266954"/>
+        </Canvas.RenderTransform>
+        <Canvas Name="path57485">
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path57652" Fill="#FFFFFFFF" StrokeThickness="0.696514" Data="m 187.1452 61.155286 q -0.79809 0.348258 -1.45108 0.652984 -0.63847 0.304725 -1.68324 0.638472 -0.88516 0.275704 -1.92993 0.464344 -1.03026 0.20315 -2.27819 0.20315 -2.35074 0 -4.28067 -0.652983 -1.91542 -0.667494 -3.33747 -2.075036 -1.39303 -1.378521 -2.17661 -3.497089 -0.78358 -2.133079 -0.78358 -4.948163 0 -2.669977 0.75456 -4.774034 0.75456 -2.104058 2.17661 -3.555132 1.37852 -1.407542 3.32296 -2.14759 1.95895 -0.740048 4.33871 -0.740048 1.74129 0 3.46807 0.420812 1.74129 0.420811 3.85986 1.480095 v 3.410025 h -0.21766 q -1.78483 -1.494607 -3.54063 -2.176612 -1.7558 -0.682005 -3.75828 -0.682005 -1.63971 0 -2.96019 0.536898 -1.30597 0.522387 -2.33623 1.639714 -1.00124 1.088305 -1.56716 2.757041 -0.55141 1.654224 -0.55141 3.830836 0 2.278186 0.60945 3.9179 0.62397 1.639714 1.59619 2.669977 1.01575 1.073795 2.36525 1.596182 1.36401 0.507876 2.87312 0.507876 2.07504 0 3.88888 -0.711027 1.81385 -0.711026 3.39552 -2.133079 h 0.20315 z" Height="25" Stretch="Fill" Width="25" Canvas.Top="32.256" Canvas.Left="3.805" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas Name="path57487">
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path57660" Fill="#FFFFFFFF" StrokeThickness="0.696514" Data="M 204.87732 62.722446 H 191.20821 V 41.115951 h 2.87312 v 19.052605 h 10.79599 z" Height="24" Stretch="Fill" Width="21" Canvas.Left="33.646" Canvas.Top="32.718" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas Name="path57489">
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path57668" Fill="#FFFFFFFF" StrokeThickness="0.696514" Data="m 223.56716 43.597288 q 1.32048 1.451074 2.017 3.555132 0.71102 2.104058 0.71102 4.774034 0 2.669977 -0.72553 4.788545 -0.71103 2.104058 -2.00249 3.5116 -1.33499 1.465585 -3.16334 2.205633 -1.81384 0.740047 -4.15007 0.740047 -2.27819 0 -4.15007 -0.754558 -1.85738 -0.754559 -3.16335 -2.191122 -1.30596 -1.436564 -2.01699 -3.526111 -0.69651 -2.089547 -0.69651 -4.774034 0 -2.640955 0.69651 -4.730502 0.69652 -2.104058 2.03151 -3.598664 1.27694 -1.422053 3.16334 -2.176611 1.9009 -0.754559 4.13556 -0.754559 2.32172 0 4.16458 0.769069 1.85738 0.754559 3.14883 2.162101 z m -0.26119 8.329166 q 0 -4.208115 -1.8864 -6.486302 -1.88639 -2.292697 -5.15131 -2.292697 -3.29394 0 -5.18034 2.292697 -1.87188 2.278187 -1.87188 6.486302 0 4.251648 1.91542 6.515323 1.91541 2.249166 5.1368 2.249166 3.22138 0 5.12229 -2.249166 1.91542 -2.263675 1.91542 -6.515323 z" HorizontalAlignment="Left" Canvas.Left="55.166" VerticalAlignment="Center" Height="25" Stretch="Fill" Width="26" Canvas.Top="32.477"/>
+        </Canvas>
+        <Canvas Name="path57491">
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path57676" Fill="#FFFFFFFF" StrokeThickness="0.696514" Data="m 246.55218 56.555381 q 0 1.262435 -0.59494 2.495848 -0.58043 1.233413 -1.63972 2.089547 -1.16086 0.928687 -2.71351 1.451074 -1.53813 0.522386 -3.71475 0.522386 -2.33623 0 -4.20811 -0.435322 -1.85738 -0.435322 -3.7873 -1.291456 v -3.598664 h 0.20315 q 1.63971 1.36401 3.7873 2.104058 2.14759 0.740048 4.03399 0.740048 2.66997 0 4.15007 -1.001242 1.4946 -1.001241 1.4946 -2.669976 0 -1.436564 -0.71102 -2.118569 -0.69652 -0.682005 -2.13308 -1.059284 -1.08831 -0.290215 -2.36525 -0.478854 -1.26244 -0.18864 -2.68449 -0.478855 -2.87313 -0.609451 -4.26616 -2.075036 -1.37852 -1.480096 -1.37852 -3.845347 0 -2.713509 2.2927 -4.440287 2.2927 -1.741289 5.81881 -1.741289 2.27818 0 4.17909 0.435322 1.90091 0.435323 3.36649 1.073795 v 3.395514 h -0.20315 q -1.23341 -1.044774 -3.2504 -1.726778 -2.00249 -0.696516 -4.10654 -0.696516 -2.30721 0 -3.71475 0.957709 -1.39304 0.957709 -1.39304 2.466826 0 1.349499 0.69652 2.118569 0.69652 0.769069 2.45232 1.17537 0.92868 0.20315 2.64095 0.493365 1.71227 0.290215 2.90215 0.59494 2.40878 0.638473 3.62769 1.929929 1.2189 1.291456 1.2189 3.613175 z" Height="25" Stretch="Fill" Width="21" Canvas.Left="82.809" Canvas.Top="32.812" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas Name="path57493">
+            <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path57684" Fill="#FFFFFFFF" StrokeThickness="0.696514" Data="M 265.40163 62.722446 H 251.16659 V 41.115951 h 14.23504 v 2.553891 h -11.36191 v 5.920383 h 11.36191 v 2.55389 h -11.36191 v 8.024441 h 11.36191 z" HorizontalAlignment="Center" Canvas.Left="108.547" Canvas.Top="33.699" VerticalAlignment="Center" Height="24" Stretch="Fill" Width="20"/>
+        </Canvas>
+    </Canvas>
+</Canvas>

@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Authors>Christian Wischenbart</Authors>
+    <Company>OpenMacroBoard</Company>
+    <Copyright>OpenMacroBoard 2018 - 2021</Copyright>
+    <Description>A virtual macro board for development</Description>
+    <Version>4.1.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/OpenMacroBoard/OpenMacroBoard.SDK</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/OpenMacroBoard/OpenMacroBoard.SDK</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/OpenMacroBoard/StreamDeckSharp/master/doc/icon64.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>streamdeck elgato stream deck macro board virtual</PackageTags>
+    <DocumentationFile>bin\OpenMacroBoard.VirtualBoard.xml</DocumentationFile>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>OpenMacroBoard.VirtualBoard.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="glassKey.png" />
+    <None Remove="VirtualBoardControl.xaml" />
+    <None Remove="VirtualBoardWindow.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="glassKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="VirtualBoardControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VirtualBoardWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenMacroBoard.SDK\OpenMacroBoard.SDK.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+</Project>

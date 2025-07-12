@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472</TargetFrameworks>
+    <LangVersion>8.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Version>0.0.0-helios</Version>
+    <Authors>Christian Wischenbart</Authors>
+    <Company>OpenMacroBoard</Company>
+    <Description>Abstraction for macro boards (with LCD keys)</Description>
+    <Copyright>OpenMacroBoard 2018 - 2021</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://openmacroboard.github.io/</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/HeliosVirtualCockpit/StreamDeckSharp/master/doc/icon64.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>streamdeck elgato stream deck open macro board openmacroboard streamdeckmini streamdeckxl mini xl</PackageTags>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/HeliosVirtualCockpit/OpenMacroBoard.SDK</RepositoryUrl>
+    <DocumentationFile>bin\OpenMacroBoard.SDK.xml</DocumentationFile>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>OpenMacroBoard.SDK.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+</Project>

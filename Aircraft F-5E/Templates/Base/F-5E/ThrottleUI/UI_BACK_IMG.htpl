@@ -1,0 +1,16 @@
+﻿<ControlTemplate>
+  <Name>UI_BACK_IMAGE</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Panel</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>733,400</Size>
+      <Hidden>False</Hidden>
+      <Background>
+        <Image>{F-5E}/Images/ThrottleUI/F5E_UI_BACK/UI_BACKIMAGE.png</Image>
+        <ImageAlignment>Stretched</ImageAlignment>
+      </Background>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

@@ -1,0 +1,18 @@
+﻿<ControlTemplate>
+  <Name>FirePanelButton</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.IndicatorPushButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <IndicatorOnImage>{F-5E}/Images/FrontButtons/FirePanel/FirePanelOn.png</IndicatorOnImage>
+      <PushedIndicatorOnImage>{F-5E}/Images/FrontButtons/FirePanel/FirePanelOnPushed.png</PushedIndicatorOnImage>
+      <OnTextColor>#FFB3A229</OnTextColor>
+      <Location>402,206</Location>
+      <Size>37,145</Size>
+      <Hidden>False</Hidden>
+      <Type>Momentary</Type>
+      <Image>{F-5E}/Images/FrontButtons/FirePanel/FirePanelOff.png</Image>
+      <PushedImage>{F-5E}/Images/FrontButtons/FirePanel/FirePanelOffPushed.png</PushedImage>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

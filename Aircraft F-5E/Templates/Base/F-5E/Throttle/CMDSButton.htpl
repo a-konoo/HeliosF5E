@@ -1,0 +1,51 @@
+﻿<ControlTemplate>
+  <Name>CMDSButton</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Base.FlipButton</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>40,68</Location>
+      <Size>47, 64</Size>
+      <Hidden>False</Hidden>
+      <AnimationFrameImageNamePattern>{Helios}/Images/F-5E/ThrottleParts/CMDSButton/CMDSButton_01_01.png</AnimationFrameImageNamePattern>
+      <Type>Momentary</Type>
+      <Positions>
+        <Position Name="0" Frame="1"   Dx="0" Dy="0" DragAngle="0" />
+        <Position Name="1" Frame="2"   Dx="20" Dy="-25" DragAngle="0" />
+        <Position Name="2" Frame="3"   Dx="26" Dy="-35" DragAngle="0" />
+        <Position Name="3" Frame="4"   Dx="42" Dy="-52" DragAngle="0" />
+        <Position Name="4" Frame="5"   Dx="53" Dy="-65" DragAngle="0" />
+        <Position Name="5" Frame="6"   Dx="64" Dy="-80" DragAngle="0" />
+        <Position Name="6" Frame="7"   Dx="75" Dy="-95" DragAngle="0" />
+        <Position Name="7" Frame="8"   Dx="90" Dy="-107" DragAngle="0" />
+        <Position Name="8" Frame="9"   Dx="102" Dy="-117" DragAngle="0" />
+        <Position Name="9" Frame="10"   Dx="116" Dy="-129" DragAngle="0" />
+        <Position Name="10" Frame="11"   Dx="130" Dy="-138" DragAngle="0" />
+        <Position Name="11" Frame="12"   Dx="146" Dy="-151" DragAngle="0" />
+        <Position Name="12" Frame="13"   Dx="159" Dy="-162" DragAngle="0" />
+        <Position Name="13" Frame="14"   Dx="173" Dy="-170" DragAngle="0" />
+        <Position Name="14" Frame="15"   Dx="192" Dy="-181" DragAngle="0" />
+        <Position Name="15" Frame="16"   Dx="205" Dy="-190" DragAngle="0" />
+        <Position Name="16" Frame="17"   Dx="220" Dy="-196" DragAngle="0" />
+        <Position Name="17" Frame="18"   Dx="236" Dy="-203" DragAngle="0" />
+        <Position Name="18" Frame="19"   Dx="252" Dy="-208" DragAngle="0" />
+        <Position Name="19" Frame="20"   Dx="267" Dy="-213" DragAngle="0" />
+        <Position Name="20" Frame="21"   Dx="280" Dy="-218" DragAngle="0" />
+        <Position Name="21" Frame="22"   Dx="297" Dy="-222" DragAngle="0" />
+        <Position Name="22" Frame="23"   Dx="310" Dy="-227" DragAngle="0" />
+        <Position Name="23" Frame="24"   Dx="323" Dy="-228" DragAngle="0" />
+        <Position Name="24" Frame="25"   Dx="338" Dy="-231" DragAngle="0" />
+        <Position Name="25" Frame="26"   Dx="351" Dy="-230" DragAngle="0" />
+        <Position Name="26" Frame="27"   Dx="365" Dy="-232" DragAngle="0" />
+        <Position Name="27" Frame="28"   Dx="377" Dy="-233" DragAngle="0" />
+        <Position Name="28" Frame="29"   Dx="391" Dy="-231" DragAngle="0" />
+        <Position Name="29" Frame="30"   Dx="403" Dy="-226" DragAngle="0" />
+        <Position Name="30" Frame="31"   Dx="413" Dy="-223" DragAngle="0" />
+        <Position Name="31" Frame="32"   Dx="423" Dy="-223" DragAngle="0" />
+        <Position Name="32" Frame="33"   Dx="427" Dy="-223" DragAngle="0" />
+        <Position Name="33" Frame="34"   Dx="435" Dy="-220" DragAngle="0" />
+      </Positions>
+      <PatternNumber>2</PatternNumber>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

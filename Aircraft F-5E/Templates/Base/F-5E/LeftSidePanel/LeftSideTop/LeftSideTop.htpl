@@ -1,0 +1,16 @@
+﻿<ControlTemplate>
+  <Name>LeftSideTop</Name>
+  <Category>F-5E</Category>
+  <TypeIdentifier>Helios.Panel</TypeIdentifier>
+  <Template>
+    <TemplateValues>
+      <Location>0,0</Location>
+      <Size>581,800</Size>
+      <Hidden>False</Hidden>
+      <Background>
+        <Image>{F-5E}/Images/LeftSidePanel/F5E_LEFT_TOP/F5E_LEFTTOP_BASE.png</Image>
+        <ImageAlignment>Stretched</ImageAlignment>
+      </Background>
+    </TemplateValues>
+  </Template>
+</ControlTemplate>

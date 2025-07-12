@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Canvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Name="svg5684" Width="10" Height="30">
+    <Canvas.Resources/>
+    <Canvas Name="layer2" Canvas.Left="-100" Canvas.Top="-32">
+        <Canvas>
+            <Canvas Name="inrangeoff">
+                <Canvas>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path215338" Fill="#FFFFFFFF" StrokeThickness="0.264583" Data="m 109.7826 51.314606 h -2.59002 v -3.590824 h 0.92604 v 2.896292 h 1.66398 z" Canvas.Left="-4.248" Canvas.Top="-12.744"/>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path215340" Fill="#FFFFFFFF" StrokeThickness="0.264583" Data="m 110.54466 57.844039 h -1.13585 l -1.07315 -1.437294 -0.21704 0.262861 v 1.174433 h -0.92604 v -3.590824 h 0.92604 v 1.625397 l 1.28296 -1.625397 h 1.07314 l -1.40353 1.66157 z" Canvas.Left="-4.248" Canvas.Top="-14.356" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path215342" Fill="#FFFFFFFF" StrokeThickness="0.264583" Data="m 110.68453 62.579266 q 0 0.858518 -0.49196 1.364947 -0.49196 0.504018 -1.36012 0.504018 -0.86576 0 -1.35772 -0.504018 -0.49196 -0.506429 -0.49196 -1.364947 0 -0.865753 0.49196 -1.367359 0.49196 -0.504017 1.35772 -0.504017 0.86334 0 1.35771 0.504017 0.49437 0.501606 0.49437 1.367359 z m -1.22749 0.909161 q 0.13505 -0.163987 0.20016 -0.385851 0.0651 -0.224276 0.0651 -0.525722 0 -0.32315 -0.0747 -0.549837 -0.0748 -0.226687 -0.19534 -0.366558 -0.12299 -0.144694 -0.28457 -0.209806 -0.15916 -0.06511 -0.33279 -0.06511 -0.17605 0 -0.3328 0.0627 -0.15434 0.0627 -0.28456 0.207395 -0.12058 0.135048 -0.19775 0.373793 -0.0748 0.236333 -0.0748 0.549837 0 0.320739 0.0724 0.547426 0.0748 0.224276 0.19533 0.366558 0.12058 0.142283 0.28216 0.209806 0.16157 0.06752 0.34003 0.06752 0.17845 0 0.34003 -0.06752 0.16157 -0.06993 0.28215 -0.214629 z" Canvas.Left="-4.388" Canvas.Top="-12.744" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path215344" Fill="#FFFFFFFF" StrokeThickness="0.264583" Data="m 110.45784 70.902905 h -0.89228 l -1.52411 -2.464621 v 2.464621 h -0.84887 v -3.590823 h 1.10691 l 1.30948 2.057067 v -2.057067 h 0.84887 z" Canvas.Left="-4.162" Canvas.Top="-14.356" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                </Canvas>
+            </Canvas>
+        </Canvas>
+    </Canvas>
+</Canvas>
