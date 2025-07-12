@@ -1,1 +1,0 @@
-﻿Simulator Viewports will be generated here during build.
